@@ -1,2 +1,2 @@
-josiahdavis.github.com
+josiahdavis.github.io
 ======================
