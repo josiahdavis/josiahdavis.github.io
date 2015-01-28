@@ -3,7 +3,6 @@ layout: post
 title: Identifying with UFOs
 ---
 
-#  Identifying with UFOs
 By now, most modern people have accepted the fact that we are not alone in this universe. Aliens exist, and we should treat with dignity and respect. However, surprisingly, there are still some who adamantly refuse to believe in Extraterrestrial life. In order to create awareness on this important topic, I wrote this with my colleague [Daniel Henebery](www.questionable-economics.com) to present analaysis that will help us to undertand our extraterrestrial brothers.
 
 ## Over 80,000 UFO Sighings
