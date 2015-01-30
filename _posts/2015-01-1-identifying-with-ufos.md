@@ -3,7 +3,7 @@ layout: post
 title: Identifying with UFOs
 ---
 
-By now, most modern people have accepted the fact that we are not alone in this universe. Aliens exist, and we should treat with dignity and respect. However, surprisingly, there are still some who adamantly refuse to believe in Extraterrestrial life. In order to create awareness on this important topic, I wrote this with my colleague [Daniel Henebery](http://www.questionable-economics.com) to present analaysis that will help us to undertand our extraterrestrial brothers.
+By now, most people have accepted the fact that we are not alone in this universe. Aliens exist, and we should treat with dignity and respect. However, surprisingly, there are still some who adamantly refuse to believe in Extraterrestrial life. In order to create awareness on this important topic, I wrote this with my colleague [Daniel Henebery](http://www.questionable-economics.com) to present analaysis that will help us to undertand our extraterrestrial brothers.
 
 ## Over 80,000 UFO Sighings
   > While doing astrophotography I observed five yellow-white lights in a "V" formation moving slowly from the northwest, across the sky to the northeast, then turn almost due south and continue until out of sight.... During the NW-NE transit one of the trailing lights moved up and joined the three and then dropped back to the trailing position. I estimated the three ;ight "V" to cover about 0.5 degrees of sky and the whole group of five lights to cover about 1 degree of sky. (Prescott, AZ, March 19, 1997)
