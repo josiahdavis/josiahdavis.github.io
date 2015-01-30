@@ -18,7 +18,7 @@ One of the most significant events in the recent past for Alien awareness was th
 ## Aliens Are Patriotic
 I have found that one of the biggest misconceptions about Aliens lies is the belief, perhaps perpetuated by their representation in Hollywood, that Aliens are bent on world domination. Indeed from my research, it appears that Aliens are actually quite patriotic. As you can see from the chart below, Aliens are more likely to visit the earth on the 4th of July than any other day, a sure tribute to our founding fathers. Perhaps the skeptic in you questions whether Aliens are just after the food. If that was the case, why don't you see corresponding activity for other major holidays such as Thanksgiving, Christmas, and Easter?
 
-<iframe src="http://bl.ocks.org/josiahdavis/raw/c5a92fb97f20d88e7ac9/" marginwidth="0" marginheight="0" frameborder="0" height="475px" width="750px" scrolling="no"></iframe>
+<iframe src="http://bl.ocks.org/josiahdavis/raw/c5a92fb97f20d88e7ac9/" marginwidth="0" marginheight="0" frameborder="0" height="535px" width="750px" scrolling="no"></iframe>
 
 ## Aliens enjoy a good time
 Another widely-held misconception is that Aliens are aloof and distant creatures. While there are surely differences between them and us, Aliens are actually, more fun-loving that we might think. As the chart below indicates, you are more likely to see an Alien on a Friday or Saturday night than any other time of the week. 
