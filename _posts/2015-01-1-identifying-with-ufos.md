@@ -19,7 +19,7 @@ I have found that one of the biggest misconceptions about Aliens lies is the bel
 ## Aliens enjoy a good time
 Another widely-held misconception is that Aliens are aloof and distant creatures. While there are surely differences between them and us, Aliens are actually, more fun-loving that we might think. As the chart below indicates, you are more likely to see an Alien on a Friday or Saturday night than any other time of the week. 
 
-<iframe src="http://bl.ocks.org/josiahdavis/raw/044b6efc12278b627687/" marginwidth="0" marginheight="0" frameborder="0" height="450px" width="750px" scrolling="auto"></iframe>
+<iframe src="http://bl.ocks.org/josiahdavis/raw/044b6efc12278b627687/" marginwidth="0" marginheight="0" frameborder="0" height="475px" width="750px" scrolling="auto"></iframe>
 
 
 ## Down to earth
