@@ -13,6 +13,8 @@ This detailed description is but one of over 80,000 UFO sighting that have been 
 ## Aliens Like X-Files
 One of the most significant events in the recent past for Alien awareness was the release of the TV show [X-Files](http://en.wikipedia.org/wiki/The_X-Files) in September of 1993 (see chart below). The X-Files premiere was watched by 12 million people (about 5% of the US population at the time), and it's viewership only went up from there which led to it becoming one of the longest running science fiction TV series of all time. The impact this show had was to gradually dispel skepticism about the existence of Aliens. While possibly unrealistic in its representation on the nature of Aliens, the X-files TV show helped to shift the converstaion from "Do aliens exist?" to "What are aliens like?".
 
+<iframe src="http://bl.ocks.org/josiahdavis/raw/ce4ba4fccbe8935944db/" marginwidth="0" marginheight="0" frameborder="0" height="475px" width="750px" scrolling="no"></iframe>
+
 ## Aliens Are Patriotic
 I have found that one of the biggest misconceptions about Aliens lies is the belief, perhaps perpetuated by their representation in Hollywood, that Aliens are bent on world domination. Indeed from my research, it appears that Aliens are actually quite patriotic. As you can see from the chart below, Aliens are more likely to visit the earth on the 4th of July than any other day, a sure tribute to our founding fathers. Perhaps the skeptic in you questions whether Aliens are just after the food. If that was the case, why don't you see corresponding activity for other major holidays such as Thanksgiving, Christmas, and Easter?
 
