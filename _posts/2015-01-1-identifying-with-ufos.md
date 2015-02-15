@@ -33,9 +33,9 @@ This schedule only makes sense if alien activity follows some human activity. Gi
 ## Aliens Love America
 The movie [Independence Day](http://www.imdb.com/title/tt0116629/) is slander and [Roland Emmerich](http://www.imdb.com/name/nm0000386/?ref_=tt_ov_dr) is a hack. Aliens love America and they love the 4th of July.
 
-Mr. Emmerich's idea of aliens is a paranoid delusion. Everyone knows extra-terrestrials come down to earth every 4th of July to see the fireworks and eat hot dogs. The chart above shows this: In any given year, aliens are more likely to visit the earth on the 4th of July than any other day. And what else besides fireworks, hotdogs, and one terrible movie is that day known for? This plus the fact that the White House is still standing, suggests aliens are just here for the party.
-
 <iframe src="http://bl.ocks.org/josiahdavis/raw/6d7a81fd3819278e205f" marginwidth="0" marginheight="0" frameborder="0" height="535px" width="750px" scrolling="no"></iframe>
+
+Mr. Emmerich's idea of aliens is a paranoid delusion. Everyone knows extra-terrestrials come down to earth every 4th of July to see the fireworks and eat hot dogs. The chart above shows this: In any given year, aliens are more likely to visit the earth on the 4th of July than any other day. And what else besides fireworks, hotdogs, and one terrible movie is that day known for? This plus the fact that the White House is still standing, suggests aliens are just here for the party.
 
 ## What Other Truths are Out there?
 There are many other things that are of interest to aliens, which continued years of observation may yield. The data also suggests less clearly that aliens may come to earth to see the aurora borealis and the Leonid Meteor shower or even to race experimental military aircraft, for instance. More years of observation are necessary and we sincerely hope NUFORC continues to archive these sightings. The insight into human behavior is interesting -- even to skeptics.
