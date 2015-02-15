@@ -3,7 +3,6 @@ layout: post
 title: Identifying with UFOs
 ---
 
-We should put the fact that we wrote the piece together along with links to our respective publications up front in italics like this. This way we can have the same piece on both our blogs without it seeming strange that one of us is referencing the other. Also, it’s what news blogs do when they repost something. Also, we should thank NUFORC for making the data available and acknowledge that their work is what made this all possible.
 First, aliens exist.
 The anecdotal evidence supporting the existence of extra-terrestrial beings is extensive and undeniable. Consider this account from Prescott, Arizona on March 19, 1997:
 
