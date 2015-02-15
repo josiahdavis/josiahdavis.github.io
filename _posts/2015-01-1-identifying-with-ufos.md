@@ -4,7 +4,7 @@ title: Identifying with UFOs
 ---
 
 
-*[Daniel Henebery](www.questionable-economics.com) and I wrote this article and conducted this analysis together. We would like to thank the National UFO Reporting Center for making the data available. Without you, this would not be possible.*
+*[Daniel Henebery](www.questionable-economics.com) and I wrote this article and conducted this analysis together. We would like to thank the National UFO Reporting Center for making the data available. Without your extensive records, these insights into alien behavior would not be possible.*
 
 First, aliens exist.
 
@@ -14,7 +14,7 @@ This is evident from extensive anecdotal evidence supporting the existence of ex
 
 This detailed description is but one of over 80,000 UFO sighting that have been recorded by the [The National UFO Reporting Center (NUFORC)](http://www.nuforc.org/). According to its website, NUFORC's mission is: to "receive, record, and to the greatest degree possible, corroborate and document reports from individuals who have been witness to unusual, possibly UFO-related events." To this end, the center relies on individuals to report UFO sightings. Many individuals report directly and many more are referred to the NUFORC by the Federal Aviation Administration, the National Weather Services, NASA, and 911 emergency dispatchers, all of whom regularly direct calls they receive about UFO sightings to the NUFORC.
 
-The NUFORC maintains these reports in an [online database](http://www.nuforc.org/webreports/ndxevent.html) available for the public to download. An analysis of reported sighting densities across time yields interesting facts about aliens beyond their mere existence.
+The NUFORC maintains these reports in an [online database](http://www.nuforc.org/webreports/ndxevent.html) available for the public to download. An analysis of reported sighting density across various partitions of time reveals certain alien preferences are curiously human.
 
 ## Aliens Watch the X-Files
 In September 1993, the cult television show [X-Files](http://en.wikipedia.org/wiki/The_X-Files) premiered. 12 million people --about 5% of the US population at the time-- watched the premier and 27 million watched during the show's peak in 1997. It is likely that these numbers are low, as they only count human viewership.
@@ -28,14 +28,14 @@ The 24-hour day and the 7-day week only make sense on Earth. One would not neces
 
 <iframe src="http://bl.ocks.org/josiahdavis/raw/044b6efc12278b627687" marginwidth="0" marginheight="0" frameborder="0" height="535px" width="750px" scrolling="no"></iframe>
 
-This schedule only makes sense if alien activity follows some human activity. Given the bias towards the evening and the weekend, we can infer that the activity that aliens are interested in occurs during human leisure time. In other words, peak-UFO activity seems to occur at the same time as peak-college-fraternity-drinking activity. This is speculative, but it could explain why UFOs that cross light years [crash as soon as they get to New Mexico](http://en.wikipedia.org/wiki/Roswell_UFO_incident)
+This schedule only makes sense if alien activity follows some human activity. Given the bias towards the evening and the weekend, one can infer that the activity that aliens are interested in occurs during human leisure time. In other words, peak-UFO activity seems to occur at the same time as peak-college-fraternity-drinking activity. This is speculative, but it could explain why UFOs that cross light years [crash as soon as they get to New Mexico](http://en.wikipedia.org/wiki/Roswell_UFO_incident)
 
 ## Aliens Love America
-The movie [Independence Day](http://www.imdb.com/title/tt0116629/) is slander and [Roland Emmerich](http://www.imdb.com/name/nm0000386/?ref_=tt_ov_dr) is a hack. Aliens love America and they love the 4th of July.
+The movie [Independence Day](http://www.imdb.com/title/tt0116629/) is slander and [Roland Emmerich](http://www.imdb.com/name/nm0000386/?ref_=tt_ov_dr) is a hack. Aliens are not bent on world domination. They love America and they celebrate the 4th of July.
 
 <iframe src="http://bl.ocks.org/josiahdavis/raw/6d7a81fd3819278e205f" marginwidth="0" marginheight="0" frameborder="0" height="535px" width="750px" scrolling="no"></iframe>
 
 Mr. Emmerich's idea of aliens is a paranoid delusion. Everyone knows extra-terrestrials come down to earth every 4th of July to see the fireworks and eat hot dogs. The chart above shows this: In any given year, aliens are more likely to visit the earth on the 4th of July than any other day. And what else besides fireworks, hotdogs, and one terrible movie is that day known for? This plus the fact that the White House is still standing, suggests aliens are just here for the party.
 
 ## What Other Truths are Out there?
-There are many other things that are of interest to aliens, which continued years of observation may yield. The data also suggests less clearly that aliens may come to earth to see the aurora borealis and the Leonid Meteor shower or even to race experimental military aircraft, for instance. More years of observation are necessary and we sincerely hope NUFORC continues to archive these sightings. The insight into human behavior is interesting -- even to skeptics.
+Aliens have other interests on Earth, whiich continued observatin may help uncover. For example, the also hints that aliens may come to earth to see the aurora borealis and the Leonid Meteor shower or even to race experimental military aircraft. More years of observation, aided by the documentation efforts of the NUFORC, are necessary to continue learning. The insight it gives into alien behavior is interesting -- even to skeptics.
