@@ -8,6 +8,8 @@ title: Identifying with UFOs
 
 First, aliens exist.
 
+This is evident from extensive anecdotal evidence supporting the existence of extra-terrestrial beings. Consider this account from Prescott, Arizona on March 19, 1997:
+
 The anecdotal evidence supporting the existence of extra-terrestrial beings is extensive and undeniable.
 
   > While doing astrophotography I observed five yellow-white lights in a "V" formation moving slowly from the northwest, across the sky to the northeast, then turn almost due south and continue until out of sight.... During the NW-NE transit one of the trailing lights moved up and joined the three and then dropped back to the trailing position. I estimated the three light "V" to cover about 0.5 degrees of sky and the whole group of five lights to cover about 1 degree of sky. (Prescott, AZ, March 19, 1997)
