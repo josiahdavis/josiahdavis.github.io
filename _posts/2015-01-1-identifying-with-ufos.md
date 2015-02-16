@@ -44,7 +44,7 @@ Mr. Emmerich's idea of aliens is a paranoid delusion. Everyone knows extra-terre
 Aliens have other interests on Earth, which continued observation may help uncover. For example, the data also hints that aliens may come to earth to see the aurora borealis and the Leonid Meteor shower or even to race experimental military aircraft. More years of observation, aided by the documentation efforts of the NUFORC, are necessary to continue learning. The insight it gives into alien behavior is interesting -- even to skeptics.
 
 ---
-*Notes:*
+Notes:
 * The underlying data used in this analysis can be found [here](https://raw.githubusercontent.com/josiahdavis/josiahdavis.github.io/master/supporting%20material/ufo_data.csv).
 * The script used to scrape the data from the NUFORC's site can be found [here](https://github.com/josiahdavis/josiahdavis.github.io/blob/master/supporting%20material/get_ufo_data.py).
 * The annual reported UFO sightings in the first chart is a moving average.
