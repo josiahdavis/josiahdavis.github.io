@@ -49,3 +49,4 @@ Aliens have other interests on Earth, which continued observation may help uncov
 * The underlying data used in this analysis can be found [here](https://raw.githubusercontent.com/josiahdavis/josiahdavis.github.io/master/supporting%20material/ufo_data.csv).
 * The script used to scrape the data from the NUFORC's site can be found [here](https://github.com/josiahdavis/josiahdavis.github.io/blob/master/supporting%20material/get_ufo_data.py).
 * The annual reported UFO sightings in the first chart is a moving average.
+* The reported UFO sightings in the third chart are weekly totals.
