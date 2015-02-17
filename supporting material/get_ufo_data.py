@@ -1,8 +1,17 @@
 '''
 Get Data from the National UFO Reporting Center
+
+Author: Josiah Davis
+Date:   February, 2015
 '''
+
+# For dataframes
 import pandas as pd
+
+# For collecting content from the web
 import requests
+
+# For isolating divs from an html file
 from bs4 import BeautifulSoup
 
 # Create list of states to loop through
@@ -18,8 +27,10 @@ df = pd.DataFrame()
 for state in states:
 
     '''
-    To practice web-scraping, recommend downloading the web-page:
-    soup = BeautifulSoup(open(ufp_data.html), "html.parser")
+    To practice, recommend downloading a couple of web-pages first.
+    Reference: http://lethain.com/an-introduction-to-compassionate-screenscraping/
+    Example:
+    soup = BeautifulSoup(open("ufo_data" + state + ".html"), "html.parser")
     '''
     
     # Get HTML from URL
