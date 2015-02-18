@@ -4,7 +4,7 @@ title: Identifying with UFOs
 ---
 
 
-*[Daniel Henebery](http://www.questionable-economics.com/) and I created this article together. We would like to thank the National UFO Reporting Center for making the data available. Without your extensive records, these insights into would not be possible.*
+*[Daniel Henebery](http://www.questionable-economics.com/) and I created this article together. We would like to thank the National UFO Reporting Center for making the data available. Without your extensive records, these insights would not be possible.*
 
 ---
 
