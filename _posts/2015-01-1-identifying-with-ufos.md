@@ -4,7 +4,7 @@ title: Identifying with UFOs
 ---
 
 
-*[Daniel Henebery](http://www.questionable-economics.com/) and I created this article together. We would like to thank the National UFO Reporting Center for making the data available. Without your extensive records, these insights into alien behavior would not be possible.*
+*[Daniel Henebery](http://www.questionable-economics.com/) and I created this article together. We would like to thank the National UFO Reporting Center for making the data available. Without your extensive records, these insights into would not be possible.*
 
 First, aliens exist.
 
@@ -41,7 +41,7 @@ The movie [Independence Day](http://www.imdb.com/title/tt0116629/) is slander an
 Mr. Emmerich's idea of aliens is a paranoid delusion. Everyone knows extra-terrestrials come down to earth every 4th of July to see the fireworks and eat hot dogs. The chart above shows this: In any given year, aliens are more likely to visit the earth on the 4th of July than any other day. And what else besides fireworks, hotdogs, and one terrible movie is that day known for? This plus the fact that the White House is still standing, suggests aliens are just here for the party.
 
 ### What Other Truths Are Out There?
-Aliens have other interests on Earth, which continued observation may help uncover. For example, the data also hints that aliens may come to earth to see the aurora borealis and the Leonid Meteor shower or even to race experimental military aircraft. More years of observation, aided by the documentation efforts of the NUFORC, are necessary to continue learning. The insight it gives into alien behavior is interesting -- even to skeptics.
+Aliens have other interests on Earth, which continued observation may help uncover. For example, the data also hints that aliens may come to earth to see the aurora borealis and the Leonid Meteor shower or even to race experimental military aircraft. More years of observation, aided by the documentation efforts of the NUFORC, are necessary to continue learning. The insight it gives into human behavior is interesting -- even to skeptics.
 
 ---
 *Notes:*
