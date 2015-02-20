@@ -20,7 +20,7 @@ The NUFORC maintains these reports in an [online database](http://www.nuforc.org
 
 ### Aliens Watch the X-Files
 
-<iframe src="http://bl.ocks.org/josiahdavis/raw/ce4ba4fccbe8935944db" marginwidth="0" marginheight="0" frameborder="0" height="535px" width="750px" scrolling="no"></iframe>
+<iframe src="http://bl.ocks.org/josiahdavis/raw/ce4ba4fccbe8935944db" marginwidth="0" marginheight="0" frameborder="0" height="475px" width="750px" scrolling="no"></iframe>
 
 In September 1993, the cult television show [X-Files](http://en.wikipedia.org/wiki/The_X-Files) premiered. 12 million people --about 5% of the US population at the time-- watched the premier and 27 million watched during the show's peak in 1997. It is likely that these numbers are low, as they only count human viewership.
 
@@ -28,7 +28,7 @@ The main storyline of the show follows the interactions between extra-terrestria
 
 ### Aliens Enjoy Keggers
 
-<iframe src="http://bl.ocks.org/josiahdavis/raw/044b6efc12278b627687" marginwidth="0" marginheight="0" frameborder="0" height="535px" width="750px" scrolling="no"></iframe>
+<iframe src="http://bl.ocks.org/josiahdavis/raw/044b6efc12278b627687" marginwidth="0" marginheight="0" frameborder="0" height="475px" width="750px" scrolling="no"></iframe>
 
 The 24-hour day and the 7-day week only make sense on Earth. One would not necessarily expect UFO activity to follow a daily- or a weekly-pattern and yet this is exactly what one finds in the data: On any day of the week, aliens are generally out between 6 PM and midnight, and favor Friday and Saturday nights over Mondays and Tuesdays.
 
@@ -36,7 +36,7 @@ This schedule only makes sense if alien activity follows some human activity. Gi
 
 ### Aliens Love America
 
-<iframe src="http://bl.ocks.org/josiahdavis/raw/6d7a81fd3819278e205f" marginwidth="0" marginheight="0" frameborder="0" height="535px" width="750px" scrolling="no"></iframe>
+<iframe src="http://bl.ocks.org/josiahdavis/raw/6d7a81fd3819278e205f" marginwidth="0" marginheight="0" frameborder="0" height="500px" width="750px" scrolling="no"></iframe>
 
 The movie [Independence Day](http://www.imdb.com/title/tt0116629/) is slander and [Roland Emmerich](http://www.imdb.com/name/nm0000386/?ref_=tt_ov_dr) is a hack. Aliens are not bent on world domination. They love America and they celebrate the 4th of July.
 
