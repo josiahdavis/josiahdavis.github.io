@@ -2,11 +2,12 @@
 layout: page
 title: Resources
 ---
-This is not meant to be a comprehensive list of resources for learning Data Science. Rather it is a collection of resources that I have used and can vouch for from personal experience.
+A collection of Data Science resources that I personally benefitted from.
 
 ## Books:
 * [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) by Trevor Hastie and Robert Tibshirani of Stanford University
 * [Interactive Data Visualizations for the Web ](http://chimera.labs.oreilly.com/books/1230000000345/index.html) by Scott Murray
+* [Econometrics in R](http://cran.r-project.org/doc/contrib/Farnsworth-EconometricsInR.pdf) by Grant Farnsworth
 
 ## Videos:
 * [Introduction to Scikit Learn](https://www.youtube.com/watch?v=r4bRUvvlaBw) by the authors of the Scikit Learn package, Gael Varoquaux, Jake Vanderplas, and Olivier Grisel.
@@ -14,4 +15,9 @@ This is not meant to be a comprehensive list of resources for learning Data Scie
 * [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD) by Kevin Markham of [dataschool.io](http://www.dataschool.io/)
 
 ## Articles:
-[Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) by Scott Fortmann Roe of U.C. Berkeley
+* [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) by Scott Fortmann Roe of U.C. Berkeley
+* [Top 10 algorithms in data mining](http://www.cs.umd.edu/~samir/498/10Algorithms-08.pdf)
+
+## Sites:
+* [dataschool.io](http://www.dataschool.io/)
+* [scikit-learn](http://scikit-learn.org/stable/)
