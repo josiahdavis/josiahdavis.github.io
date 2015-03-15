@@ -2,7 +2,7 @@
 layout: page
 title: Resources
 ---
-A collection of Data Science resources that I personally benefitted from.
+A collection of Data Science resources that I have personally benefitted from.
 
 ## Books:
 * [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) by Trevor Hastie and Robert Tibshirani of Stanford University
@@ -17,7 +17,3 @@ A collection of Data Science resources that I personally benefitted from.
 ## Articles:
 * [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) by Scott Fortmann Roe of U.C. Berkeley
 * [Top 10 algorithms in data mining](http://www.cs.umd.edu/~samir/498/10Algorithms-08.pdf)
-
-## Sites:
-* [dataschool.io](http://www.dataschool.io/)
-* [scikit-learn](http://scikit-learn.org/stable/)
