@@ -2,7 +2,16 @@
 layout: page
 title: Resources
 ---
+This is not meant to be a comprehensive list of resources for learning Data Science. Rather it is a collection of resources that I have used and can vouch for from personal experience.
 
-* The free textbook, [An Introduction to Statistical Learning ](http://www-bcf.usc.edu/~gareth/ISL/) by Trevor Hastie and Robert Tibshirani is an excellent primer on the most popular techniques in Data Mining and Machine Learning from two world-class experts in the field. This book tends to focus on conceptual over mathmatical descriptions. There is also a video series that Kevin Markham of [dataschool.io](http://www.dataschool.io/) has helpfully indexed [here](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/). This textbook also comes with code examples in R.
+## Books:
+* [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) by Trevor Hastie and Robert Tibshirani of Stanford University
+* [Interactive Data Visualizations for the Web ](http://chimera.labs.oreilly.com/books/1230000000345/index.html) by Scott Murray
 
-* The creators of scikit learn have a three part [video workshop](https://www.youtube.com/watch?v=r4bRUvvlaBw) on Machine Learning that provides a thorough overview of the syntax for popular machine learning techniques. This workshop tends to focus on the Python Syntax instead of explaining the math of concepts behind the techniques illustrated. There is a link to the notebooks and data for the workshop in the links section of the video.
+## Videos:
+* [Introduction to Scikit Learn](https://www.youtube.com/watch?v=r4bRUvvlaBw) by the authors of the Scikit Learn package, Gael Varoquaux, Jake Vanderplas, and Olivier Grisel.
+* [Nonparametric Models and Machine Learning](http://jee3.web.rice.edu/teaching.htm) by Justin Esarey of Rice University.
+* [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD) by Kevin Markham of [dataschool.io](http://www.dataschool.io/)
+
+## Articles:
+[Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) by Scott Fortmann Roe of U.C. Berkeley
