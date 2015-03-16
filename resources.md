@@ -10,7 +10,7 @@ A collection of Data Science resources that I have personally benefitted from.
 * [Econometrics in R](http://cran.r-project.org/doc/contrib/Farnsworth-EconometricsInR.pdf) by Grant Farnsworth
 
 ## Videos:
-* [Introduction to Scikit Learn](https://www.youtube.com/watch?v=r4bRUvvlaBw) by the authors of the Scikit Learn package, Gael Varoquaux, Jake Vanderplas, and Olivier Grisel.
+* [Introduction to Scikit Learn](https://www.youtube.com/watch?v=r4bRUvvlaBw) by the authors of the [Scikit Learn](http://scikit-learn.org/stable/) package, Gael Varoquaux, Jake Vanderplas, and Olivier Grisel.
 * [Nonparametric Models and Machine Learning](http://jee3.web.rice.edu/teaching.htm) by Justin Esarey of Rice University.
 * [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD) by Kevin Markham of [dataschool.io](http://www.dataschool.io/)
 
