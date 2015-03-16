@@ -3,7 +3,7 @@ layout: default
 title: Resources
 ---
 
-## Resources
+# Resources
 
 A collection of Data Science resources that I have personally benefitted from.
 
