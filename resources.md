@@ -1,4 +1,7 @@
-# Resources:
+---
+layout: page
+title: Resources
+---
 
 A collection of Data Science resources that I have personally benefitted from.
 
