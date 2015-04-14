@@ -4,7 +4,7 @@ title: Identifying with UFOs
 ---
 
 
-*[Daniel Henebery](http://www.questionable-economics.com/) and I created this article together. We would like to thank the National UFO Reporting Center for making the data available. Without your extensive records, these insights would not be possible.*
+*[Daniel Henebery](http://www.questionable-economics.com/what-do-we-know-about-aliens/) and I had a lot of fun writing this article together. We are especially grateful to the National UFO Reporting Center. We're skeptics, but we still appreciate the hard work that made this possible.*
 
 ---
 
@@ -18,7 +18,7 @@ This detailed description is but one of over 80,000 UFO sightings that have been
 
 The NUFORC maintains these reports in an [online database](http://www.nuforc.org/webreports/ndxevent.html) available for the public to download. An analysis of reported sighting density across various partitions of time reveals that certain alien preferences are curiously human.
 
-### Aliens Watch the X-Files
+### Aliens are Fans of the X-Files
 
 <iframe src="http://bl.ocks.org/josiahdavis/raw/ce4ba4fccbe8935944db" marginwidth="0" marginheight="0" frameborder="0" height="475px" width="750px" scrolling="no"></iframe>
 
@@ -26,7 +26,7 @@ In September 1993, the cult television show [X-Files](http://en.wikipedia.org/wi
 
 The main storyline of the show follows the interactions between extra-terrestrials and FBI Special Agents Mulder and Scully. As a result, aliens are a natural extension of the show's target demographic. While Nielson ratings for [Kepler 438b](http://en.wikipedia.org/wiki/Kepler-438b) are not yet available, the record clearly shows a statistically significant structural-break in the number of reported sightings in 1993. Much like [Downton Abbey fans]() more and more aliens wanted to see each new season before it was made available locally.
 
-### Aliens Enjoy Keggers
+### Aliens Work Hard, Party Hard
 
 <iframe src="http://bl.ocks.org/josiahdavis/raw/044b6efc12278b627687" marginwidth="0" marginheight="0" frameborder="0" height="475px" width="750px" scrolling="no"></iframe>
 
