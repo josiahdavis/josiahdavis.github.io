@@ -10,10 +10,11 @@ layout: default
         {{ post.title }}
       </a>
     </h1>
+    <p class="post-date"> {{ post.synopsis }} </p>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
 
-    {{ post.content }}
+    <!-- {{ post.content }} -->
   </div>
   {% endfor %}
 </div>
