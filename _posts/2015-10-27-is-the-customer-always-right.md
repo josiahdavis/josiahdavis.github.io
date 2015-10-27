@@ -4,11 +4,9 @@ title: Is the Customer always right?
 synopsis: Slogans are by definition everywhere. But all slogans deserve qualification.
 ---
 
-## Origin story
+## Marshall Field's
 
-"The Customer Is Always Right."
-
-Within America, the credit for this slogan usually goes to Marshall Field, a business retail magnate during the period of America's gilded age. The company he helped build, Marshall Field's (originally P. Palmer & Co.), is credited with pioneering several retail practices that are now considered common. These innovations include: giving customers access to a free personal shopper, the one-price price-tag, being able to return a product for any reason, and the bridal registry. Given the typical retail experience at the time, Marshall Field's company marked radical departure from current retail practices which was often better defined the phrase: "let the buyer beware".
+Within America, the credit for "The Customer Is Always Right" slogan usually goes to Marshall Field, a business retail magnate during the period of America's gilded age. The company he helped build, Marshall Field's (originally P. Palmer & Co.), is  pioneered several retail practices that are now considered common. These innovations include: giving customers access to a free personal shopper, the one-price price-tag, being able to return a product for any reason, and the bridal registry. Given the typical retail experience at the time, Marshall Field's company marked radical departure from current retail practices which was often better defined the phrase: "let the buyer beware".
 
 After changing owners multiple times in the 1980s and 1990s (there was a period of 14 years where Marshall Field's was owned by Target), in 2005 the stores were acquired by Federated Department Stores, currently known as Macy's. When roughly a year and a half later, it was announced that Marshall Field's stores would be re-branded as Macy's, many Marshall Field's customers were outraged. Customers felt an emotional connection with the store, and many protested the decision to change the name. However, management at Macy's didn't change their mind.
 
@@ -45,9 +43,9 @@ But what makes a review useful? It depends on many factors, but one thing is cle
 
 ## Some customers are more nuanced than others
 
-<iframe src="http://bl.ocks.org/josiahdavis/raw/c9de555e22ad56bf5f8b/" marginwidth="0" marginheight="0" frameborder="0" height="250px" width="960px" scrolling=""></iframe>
+<iframe src="http://bl.ocks.org/josiahdavis/raw/c9de555e22ad56bf5f8b/" marginwidth="0" marginheight="0" frameborder="0" height="250px" width="960px" scrolling="no"></iframe>
 
-The Halo Effect can be assessed by looking at the association between the sentiment contained in the text and the overall rating of the review itself. A positive review that has entirely positive sentiment, or a negative review with entirely negative sentiment, may be a sign of what psychologists call exaggerated emotional coherence. For instance the following review, while quite lengthy doesn't have a single positive statement in it:
+The Halo Effect can be assessed by looking at the association between the sentiment contained in the text and the overall rating of the review itself[3]. A positive review that has entirely positive sentiment, or a negative review with entirely negative sentiment, may be a sign of what psychologists call exaggerated emotional coherence. For instance the following review, while quite lengthy doesn't have a single positive statement in it:
 > "Macy's Womens Shoes, What can I say...... I go there with my Mom shopping.  We were bombarded by sales people one after the other saying ""can I help you find something"".  (Even after we had been helped) How annoying. We Find the shoe we like and the sales rep goes to look for it in the back.  The wait for the show was almost 30 min.  By the time the rep returned we just wanted to leave. (And almost did)  The shoe didn't fit and after the wait we had, we decided to get on with our lives and NOT waster another 1/2 hour or more waiting to find the next pair. Can you say E-F-F-I-C-I-E-N-C-Y. PLEASE do better next time."
 
 Conversely, positive sentiments within negative reviews and the negative sentiments within positive reviews should be given extra credence, since they are less likely to be the result of this cognitive bias. For instance, this reviewer considered her experience to be generally negative, but that didn't stop her from saying several positive things as well:
@@ -63,3 +61,4 @@ When it comes to listening to feedback it's easy to take an all-or-nothing appro
 
 **[1]** Identifying common themes was accomplished here by using a custom dictionary of word patters. The word patterns were defined after looking at the most frequent tokens after removing stopwords and identifying parts of speech.
 **[2]** Colors are based off of the [augmented term frequency](https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Term_frequency_2) contained in negative (1-3 star) and positive (4-5 star) reviews.
+**[3]** The positivity and negativity are defined as the ratio of words with a general positive or negative association as normalized by the total number of words in the review itself. The sentiment is scored using an off-the-shelf sentiment lexicon created by [Saif Mohammad](http://saifmohammad.com/WebPages/meetsaif.htm) and implemented by [Matthew Jockers](http://www.matthewjockers.net/).
