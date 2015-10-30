@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown style="text-align: left;">
+					# Is the customer always right?
+					*An exploration of Natural Language Processing in R*
+
+					Created by [Josiah Davis](http://josiahjdavis.com) / [@josiahjdavis](http://twitter.com/josiahjdavis)
+				</section>
+
+				<section style="text-align: left;">
+					<h3> Origin </h3>
+					<p style="float:left; width:50%;">
+						Within the U.S., the slogan is often attributed to Marshall Field.
+
+					</p>
+					<img src="marshall_field.png" alt="Mountain View" style="width:400px;height:500px;float:right;">
+				</section>
+
+				<section style="text-align: left;">
+					<h3> Origin </h3>
+					<p style="float:left; width:50%;">
+						Marshall Field's pioneered several practices that placed the customer at the center of focus.
+					</p>
+					<img src="marshall_fields.png" alt="Mountain View" style="width:300px;height:400px;float:right;">
+				</section>
+
+				<section style="text-align: left;">
+					<h4>Question</h4>
+					<p> Is the customer <i>always</i> right? </p>
+				</section>
+
+				<section>
+					<h4>Main Point</h4>
+					<p>The customer is always right, but all slogans deserve qualification.</p>
+				</section>
+
+				<section>
+					<h2>Commonality</h2>
+					<p>Some customer complaints are more common than others</p>
+				</section>
+
+				<section>
+					<h2>Complaints</h2>
+					<iframe
+						src="http://bl.ocks.org/josiahdavis/raw/876c4364b988e863bfdb/"
+						marginwidth="0" marginheight="0" frameborder="0" height="500px" width="960px" scrolling="no">
+					</iframe>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Tokenization
+						```
+						# Load the tm (text mining) package
+						library(tm)
+
+						# Convert the relevant data into a corpus object
+						d <- Corpus(VectorSource(d$reviews))
+
+						# Remove stopwords
+						d <- tm_map(d, removeWords, stopwords("english"))
+
+						# Stem words
+						d <- tm_map(d, stemDocument)
+
+						# Convert to a document term matrix
+						dtm <- as.matrix(DocumentTermMatrix(d))
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Dictionary
+						```
+						library(stringr)
+
+						# Define dictionary of regex patterns
+						words <- c(
+						"Management" = "\\b[Mm]anage[rsment]*\\b",
+						"Website" = "\\b([Ww]eb)?[Ss]ite|[Oo]nline\\b",
+						"Returns" = "\\b[Rr]eturns?(ing)?\\b")
+
+						# Count the words (w) associated with a particular text
+						countWords <- function(w, x) {
+							str_count(x, w)
+						}
+
+						# Apply function to each word pattern for each text
+						dtm <-  sapply(d$reviews, function(x) sapply(words, function(w) countWords(w, x)))
+						dtm <- t(dtm)
+						```
+					</script>
+				</section>
+
+				<section>
+					<h2>Usefulness</h2>
+					<p>Some customer feedback is more useful than others</p>
+				</section>
+
+				<section>
+					<h2>Usefulness</h2>
+					<iframe
+						src="http://bl.ocks.org/josiahdavis/raw/ba23b5ebf0ed1b8d3eb2/"
+						marginwidth="0" marginheight="0" frameborder="0" height="500px" width="960px" scrolling="no">
+					</iframe>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Part of Speech Tagging
+						```
+
+
+						```
+					</script>
+				</section>
+
+
+				<section>
+					<h2>Nuance</h2>
+					<p>Some customers are more nuanced than others</p>
+				</section>
+
+				<section style="top: 15px;">
+					<h2>Nuance</h2>
+					<iframe
+						src="http://bl.ocks.org/josiahdavis/raw/c9de555e22ad56bf5f8b/" marginwidth="0" marginheight="0"
+						frameborder="0" height="500px" width="960px" scrolling="no">
+					</iframe>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Sentiment Analysis
+						```
+						library(syuzhet)
+						library(plyr)
+
+						# For each review, calculate the count of negative and positive sentiments
+						getSentiment <- function(x){
+						  colSums(get_nrc_sentiment(get_sentences(as.character(x$text)))[c("negative", "positive")])
+						}
+
+						# Apply function to each row of the dataframe
+						d <- adply(d, 1, function(x) getSentiment(x))
+						```
+					</script>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
