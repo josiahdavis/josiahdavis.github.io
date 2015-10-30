@@ -40,47 +40,48 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-markdown style="text-align: left;">
-					# Is the customer always right?
+				<section data-markdown>
+					## Is the customer always right?
 					*An exploration of Natural Language Processing in R*
 
-					Created by [Josiah Davis](http://josiahjdavis.com) / [@josiahjdavis](http://twitter.com/josiahjdavis)
+					Created by [Josiah Davis](http://josiahjdavis.com)
 				</section>
 
-				<section style="text-align: left;">
-					<h3> Origin </h3>
-					<p style="float:left; width:50%;">
-						Within the U.S., the slogan is often attributed to Marshall Field.
-
+				<section>
+					<img src="marshall_field.png" alt="Mountain View" style="width:400px;height:500px;">
+					<p>
+						The slogan is often attributed to Marshall Field.
 					</p>
-					<img src="marshall_field.png" alt="Mountain View" style="width:400px;height:500px;float:right;">
+
 				</section>
 
-				<section style="text-align: left;">
-					<h3> Origin </h3>
-					<p style="float:left; width:50%;">
-						Marshall Field's pioneered several practices that placed the customer at the center of focus.
+				<section>
+					<img src="marshall_fields.png" alt="Mountain View" style="width:400px;height:500px;">
+					<p>
+						Marshall Field's pioneered several retail innovations.
 					</p>
-					<img src="marshall_fields.png" alt="Mountain View" style="width:300px;height:400px;float:right;">
 				</section>
 
-				<section style="text-align: left;">
-					<h4>Question</h4>
+				<section>
+					<p> Information-flow and power dynamics have shifted. </p>
+				</section>
+
+				<section>
 					<p> Is the customer <i>always</i> right? </p>
 				</section>
 
 				<section>
-					<h4>Main Point</h4>
-					<p>The customer is always right, but all slogans deserve qualification.</p>
+					<p>The customer is always right...</p>
+					<p class="fragment">but all slogans deserve qualification.</p>
+					<p class="fragment">For instance...</p>
 				</section>
 
 				<section>
-					<h2>Commonality</h2>
-					<p>Some customer complaints are more common than others</p>
+					<p>Some customer complaints are more frequent than others</p>
 				</section>
 
 				<section>
-					<h2>Complaints</h2>
+					<h2>Word Frequency</h2>
 					<iframe
 						src="http://bl.ocks.org/josiahdavis/raw/876c4364b988e863bfdb/"
 						marginwidth="0" marginheight="0" frameborder="0" height="500px" width="960px" scrolling="no">
@@ -89,7 +90,7 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						### Tokenization
+						## Tokenization
 						```
 						# Load the tm (text mining) package
 						library(tm)
@@ -111,7 +112,7 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						### Dictionary
+						## Dictionary
 						```
 						library(stringr)
 
@@ -128,13 +129,11 @@
 
 						# Apply function to each word pattern for each text
 						dtm <-  sapply(d$reviews, function(x) sapply(words, function(w) countWords(w, x)))
-						dtm <- t(dtm)
 						```
 					</script>
 				</section>
 
 				<section>
-					<h2>Usefulness</h2>
 					<p>Some customer feedback is more useful than others</p>
 				</section>
 
@@ -148,18 +147,58 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						### Part of Speech Tagging
+						## Part of Speech Tagging
 						```
+						# Define types of annotations to perform
+						tagging_pipeline <- list(
+						  Maxent_Sent_Token_Annotator(),
+						  Maxent_Word_Token_Annotator(),
+						  Maxent_POS_Tag_Annotator()
+						)
+
+						# Define function for performing the annotations
+						annotate_entities <- function(doc, annotation_pipeline) {
+						  annotations <- annotate(doc, annotation_pipeline)
+						  AnnotatedPlainTextDocument(doc, annotations)
+						}
+
+						# Annotate the texts
+						texts_annotated <- texts %>% lapply(annotate_entities, tagging_pipeline)
+						```
+					</script>
+				</section>
 
 
+				<section data-markdown>
+					<script type="text/template">
+						## Interestingness
+						```
+						# Convert to a document term matrix
+						dtm <- as.matrix(DocumentTermMatrix(d,
+										control = list(weighting = weightTfIdf)))
+
+						# Identify the most interesting word for each review
+						words <- colnames(dtm)
+						getInterestingWord <- function(x){
+						  words[which.max(x)]
+						}
+
+						df$word <- apply(dtm, MARGIN = 1,
+								FUN = function(x) getInterestingWord(x))
 						```
 					</script>
 				</section>
 
 
 				<section>
-					<h2>Nuance</h2>
 					<p>Some customers are more nuanced than others</p>
+				</section>
+
+				<section>
+					<img src="thinking_fast_slow.jpg" alt="Mountain View" style="width:350px;height:500px;">
+					<p>
+						Human are prone to exaggerate emotional coherance.
+					</p>
 				</section>
 
 				<section style="top: 15px;">
@@ -172,7 +211,7 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						### Sentiment Analysis
+						## Sentiment
 						```
 						library(syuzhet)
 						library(plyr)
@@ -188,12 +227,8 @@
 					</script>
 				</section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+				<section>
+					<h2>Questions</h2>
 				</section>
 
 			</div>
