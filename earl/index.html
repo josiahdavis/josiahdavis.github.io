@@ -168,7 +168,6 @@
 					</script>
 				</section>
 
-
 				<section data-markdown>
 					<script type="text/template">
 						## Interestingness
@@ -183,6 +182,7 @@
 						  words[which.max(x)]
 						}
 
+						# Apply function to the entire set of documents
 						df$word <- apply(dtm, MARGIN = 1,
 								FUN = function(x) getInterestingWord(x))
 						```
@@ -225,6 +225,15 @@
 						d <- adply(d, 1, function(x) getSentiment(x))
 						```
 					</script>
+				</section>
+
+				<section>
+					<img src="henry_ford.gif" alt="Mountain View" style="width:700px;height:500px;">
+					<p><i>
+
+						“If I had asked people what they wanted, they would have said faster horses.”
+					</i></p>
+
 				</section>
 
 				<section>
