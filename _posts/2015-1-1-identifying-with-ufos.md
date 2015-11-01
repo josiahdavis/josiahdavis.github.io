@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What can UFO sightings tell us about extra-terrestrials?
+title: What Can UFO Sightings Tell Us About Extra-Terrestrials?
 synopsis: In September 1993, 12 million people watched the premier of the cult television show, X-Files. It is likely that these numbers are low, as they only count human viewership.
 ---
 

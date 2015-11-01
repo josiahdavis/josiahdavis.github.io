@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why do Artists starve?
+title: Why Do Artists Starve?
 synopsis: Choosing to go in to the arts in order to make money is a little bit like choosing to go on to The Bachelor to find your one true love. It's not that it's impossible, but it sure isn't likely.
 ---
 

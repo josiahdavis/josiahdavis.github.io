@@ -1,0 +1,191 @@
+<html>
+<head>
+<style type="text/css">
+.number{
+	color: rgb(21,20,181) ;
+}
+
+.functioncall{
+	color: red ;
+}
+
+.string{
+	color: rgb(153,153,255) ;
+}
+
+.keyword{
+	color: black;
+}
+
+.argument{
+	color: rgb( 177,63,5) ;
+}
+
+.comment{
+	color: rgb( 204,204,204) ;
+}
+
+.roxygencomment{
+	color: rgb(0,151,255);
+}
+
+.formalargs{
+	color: rgb(18,182,18);
+}
+
+.eqformalargs{
+	color: rgb(18,182,18);
+}
+
+.assignement{
+	color: rgb(55,55,98);
+}
+
+.package{
+	color: rgb(150,182,37);
+}
+
+.slot{
+	font-style:italic;
+}
+
+.symbol{
+	color: black ;
+}
+
+.prompt{
+	color: black ;
+}
+
+.line{
+    color: gray ;
+}
+</style>
+</head>
+<body>
+<pre>
+<span class="comment"># ANALYSIS OF YELP DATA</span>
+<span class="comment"># This script performs a number of NLP techniques including:</span>
+<span class="comment">#   - Tagging Parts of Speech</span>
+<span class="comment">#   - Filtering for only Nouns and Adjectives</span>
+<span class="comment">#   - Removing Stopwords</span>
+<span class="comment">#   - Stemming Words</span>
+<span class="comment">#   - Identifying Common Unigrams Bigrams and Trigrams</span>
+
+<span class="comment"># Clear working space</span>
+<span class="functioncall">rm</span><span class="keyword">(</span><span class="argument">list</span> <span class="argument">=</span> <span class="functioncall">ls</span><span class="keyword">(</span><span class="keyword">)</span><span class="keyword">)</span><span class="keyword">;</span> <span class="functioncall">gc</span><span class="keyword">(</span><span class="keyword">)</span>
+
+<span class="comment"># Load packages</span>
+<span class="functioncall">library</span><span class="keyword">(</span><span class="symbol">magrittr</span><span class="keyword">)</span>
+<span class="functioncall">library</span><span class="keyword">(</span><span class="symbol">tm</span><span class="keyword">)</span>
+<span class="functioncall">library</span><span class="keyword">(</span><span class="symbol">openNLP</span><span class="keyword">)</span>
+
+<span class="comment"># Read in dataframe of reviews</span>
+<span class="symbol">loc</span> <span class="assignement">&lt;-</span> <span class="string">'/Users/josiahdavis/Documents/GitHub/earl/data/'</span>
+<span class="symbol">d</span> <span class="assignement">&lt;-</span> <span class="functioncall">read.csv</span><span class="keyword">(</span><span class="functioncall">paste</span><span class="keyword">(</span><span class="symbol">loc</span><span class="keyword">,</span> <span class="string">'yelp_review_Macys.csv'</span><span class="keyword">,</span> <span class="argument">sep</span><span class="argument">=</span><span class="string">""</span><span class="keyword">)</span><span class="keyword">)</span>
+
+<span class="comment"># Conver to list of strings</span>
+<span class="symbol">texts</span> <span class="assignement">&lt;-</span> <span class="functioncall">lapply</span><span class="keyword">(</span><span class="symbol">d</span><span class="keyword">$</span><span class="symbol">text</span><span class="keyword">,</span> <span class="symbol">as.String</span><span class="keyword">)</span>
+
+<span class="comment"># =====================================</span>
+<span class="comment"># Identify and reviews to </span>
+<span class="comment"># only include nouns and adjectives</span>
+<span class="comment"># =====================================</span>
+
+<span class="comment"># Define types of annotations to perform</span>
+<span class="symbol">tagging_pipeline</span> <span class="assignement">&lt;-</span> <span class="functioncall">list</span><span class="keyword">(</span>
+  <span class="functioncall">Maxent_Sent_Token_Annotator</span><span class="keyword">(</span><span class="keyword">)</span><span class="keyword">,</span>
+  <span class="functioncall">Maxent_Word_Token_Annotator</span><span class="keyword">(</span><span class="keyword">)</span><span class="keyword">,</span>
+  <span class="functioncall">Maxent_POS_Tag_Annotator</span><span class="keyword">(</span><span class="keyword">)</span>
+<span class="keyword">)</span>
+
+<span class="comment"># Define function for performing the annotations</span>
+<span class="symbol">annotate_entities</span> <span class="assignement">&lt;-</span> <span class="keyword">function</span><span class="keyword">(</span><span class="formalargs">doc</span><span class="keyword">,</span> <span class="formalargs">annotation_pipeline</span><span class="keyword">)</span> <span class="keyword">{</span>
+  <span class="symbol">annotations</span> <span class="assignement">&lt;-</span> <span class="functioncall">annotate</span><span class="keyword">(</span><span class="symbol">doc</span><span class="keyword">,</span> <span class="symbol">annotation_pipeline</span><span class="keyword">)</span>
+  <span class="functioncall">AnnotatedPlainTextDocument</span><span class="keyword">(</span><span class="symbol">doc</span><span class="keyword">,</span> <span class="symbol">annotations</span><span class="keyword">)</span>
+<span class="keyword">}</span>
+
+<span class="comment"># Annotate the texts</span>
+<span class="symbol">texts_annotated</span> <span class="assignement">&lt;-</span> <span class="symbol">texts</span> <span class="keyword">%&gt;%</span> <span class="functioncall">lapply</span><span class="keyword">(</span><span class="symbol">annotate_entities</span><span class="keyword">,</span> <span class="symbol">tagging_pipeline</span><span class="keyword">)</span>
+<span class="functioncall">str</span><span class="keyword">(</span><span class="symbol">texts_annotated</span><span class="keyword">[[</span><span class="number">1</span><span class="keyword">]</span><span class="keyword">]</span><span class="keyword">,</span> <span class="argument">max.level</span> <span class="argument">=</span> <span class="number">2</span><span class="keyword">)</span>
+
+<span class="comment"># Define the POS getter function </span>
+<span class="symbol">POSGetter</span> <span class="assignement">&lt;-</span> <span class="keyword">function</span><span class="keyword">(</span><span class="formalargs">doc</span><span class="keyword">,</span> <span class="formalargs">parts</span><span class="keyword">)</span> <span class="keyword">{</span>
+  <span class="symbol">s</span> <span class="assignement">&lt;-</span> <span class="symbol">doc</span><span class="keyword">$</span><span class="symbol">content</span>
+  <span class="symbol">a</span> <span class="assignement">&lt;-</span> <span class="functioncall">annotations</span><span class="keyword">(</span><span class="symbol">doc</span><span class="keyword">)</span><span class="keyword">[[</span><span class="number">1</span><span class="keyword">]</span><span class="keyword">]</span>
+  <span class="symbol">k</span> <span class="assignement">&lt;-</span> <span class="functioncall">sapply</span><span class="keyword">(</span><span class="symbol">a</span><span class="keyword">$</span><span class="symbol">features</span><span class="keyword">,</span> <span class="symbol">`[[`</span><span class="keyword">,</span> <span class="string">"POS"</span><span class="keyword">)</span>
+  <span class="keyword">if</span><span class="keyword">(</span><span class="functioncall">sum</span><span class="keyword">(</span><span class="symbol">k</span> <span class="keyword">%in%</span> <span class="symbol">parts</span><span class="keyword">)</span> == <span class="number">0</span><span class="keyword">)</span><span class="keyword">{</span>
+    <span class="string">""</span>
+  <span class="keyword">}</span><span class="keyword">else</span><span class="keyword">{</span>
+    <span class="symbol">s</span><span class="keyword">[</span><span class="symbol">a</span><span class="keyword">[</span><span class="symbol">k</span> <span class="keyword">%in%</span> <span class="symbol">parts</span><span class="keyword">]</span><span class="keyword">]</span>
+  <span class="keyword">}</span>
+<span class="keyword">}</span>
+
+<span class="comment"># Identify the nouns</span>
+<span class="symbol">nouns</span> <span class="assignement">&lt;-</span> <span class="symbol">texts_annotated</span> <span class="keyword">%&gt;%</span> <span class="functioncall">lapply</span><span class="keyword">(</span><span class="symbol">POSGetter</span><span class="keyword">,</span> <span class="argument">parts</span> <span class="argument">=</span> <span class="functioncall">c</span><span class="keyword">(</span><span class="string">"JJ"</span><span class="keyword">,</span> <span class="string">"JJR"</span><span class="keyword">,</span> <span class="string">"JJS"</span><span class="keyword">,</span> <span class="string">"NN"</span><span class="keyword">,</span> <span class="string">"NNS"</span><span class="keyword">,</span> <span class="string">"NNP"</span><span class="keyword">,</span> <span class="string">"NNPS"</span><span class="keyword">)</span><span class="keyword">)</span>
+
+<span class="comment"># Turn each character vector into a single string</span>
+<span class="symbol">nouns</span> <span class="assignement">&lt;-</span> <span class="symbol">nouns</span> <span class="keyword">%&gt;%</span> <span class="functioncall">lapply</span><span class="keyword">(</span><span class="symbol">as.String</span><span class="keyword">)</span>
+
+<span class="comment"># =====================================</span>
+<span class="comment"># Perform text mining </span>
+<span class="comment"># transformations</span>
+<span class="comment"># =====================================</span>
+
+<span class="comment"># Conver to dataframe</span>
+<span class="symbol">d</span> <span class="assignement">&lt;-</span> <span class="functioncall">data.frame</span><span class="keyword">(</span><span class="argument">reviews</span> <span class="argument">=</span> <span class="functioncall">as.character</span><span class="keyword">(</span><span class="symbol">nouns</span><span class="keyword">)</span><span class="keyword">)</span>
+
+<span class="comment"># Replace new line characters with spaces</span>
+<span class="symbol">d</span><span class="keyword">$</span><span class="symbol">reviews</span> <span class="assignement">&lt;-</span> <span class="functioncall">gsub</span><span class="keyword">(</span><span class="string">"\n"</span><span class="keyword">,</span> <span class="string">" "</span><span class="keyword">,</span> <span class="symbol">d</span><span class="keyword">$</span><span class="symbol">reviews</span><span class="keyword">)</span>
+
+<span class="comment"># Convert the relevant data into a corpus object with the tm package</span>
+<span class="symbol">d</span> <span class="assignement">&lt;-</span> <span class="functioncall">Corpus</span><span class="keyword">(</span><span class="functioncall">VectorSource</span><span class="keyword">(</span><span class="symbol">d</span><span class="keyword">$</span><span class="symbol">reviews</span><span class="keyword">)</span><span class="keyword">)</span>
+
+<span class="comment"># Convert everything to lower case</span>
+<span class="symbol">d</span> <span class="assignement">&lt;-</span> <span class="functioncall">tm_map</span><span class="keyword">(</span><span class="symbol">d</span><span class="keyword">,</span> <span class="functioncall">content_transformer</span><span class="keyword">(</span><span class="symbol">tolower</span><span class="keyword">)</span><span class="keyword">)</span>
+
+<span class="comment"># Read in list of 5000+ stopwords compiled by Matthew Jockers</span>
+<span class="symbol">fileStopwords</span> <span class="assignement">&lt;-</span> <span class="functioncall">paste</span><span class="keyword">(</span><span class="symbol">loc</span><span class="keyword">,</span> <span class="string">'stopwords.txt'</span><span class="keyword">,</span> <span class="argument">sep</span><span class="argument">=</span><span class="string">""</span><span class="keyword">)</span>
+<span class="symbol">stopwords</span> <span class="assignement">&lt;-</span> <span class="functioncall">readChar</span><span class="keyword">(</span><span class="symbol">fileStopwords</span><span class="keyword">,</span> <span class="functioncall">file.info</span><span class="keyword">(</span><span class="symbol">fileStopwords</span><span class="keyword">)</span><span class="keyword">$</span><span class="symbol">size</span><span class="keyword">)</span>
+<span class="symbol">stopwords</span> <span class="assignement">&lt;-</span> <span class="functioncall">unlist</span><span class="keyword">(</span><span class="functioncall">strsplit</span><span class="keyword">(</span><span class="symbol">stopwords</span><span class="keyword">,</span> <span class="argument">split</span><span class="argument">=</span><span class="string">", "</span><span class="keyword">)</span><span class="keyword">)</span>
+
+<span class="symbol">stopwords</span> <span class="assignement">&lt;-</span> <span class="functioncall">c</span><span class="keyword">(</span><span class="functioncall">stopwords</span><span class="keyword">(</span><span class="string">"english"</span><span class="keyword">)</span><span class="keyword">,</span> <span class="symbol">stopwords</span><span class="keyword">)</span>
+<span class="keyword">for</span> <span class="keyword">(</span><span class="symbol">i</span> <span class="keyword">in</span> <span class="number">0</span><span class="keyword">:</span><span class="number">4</span><span class="keyword">)</span><span class="keyword">{</span>
+  <span class="symbol">start</span> <span class="assignement">&lt;-</span> <span class="symbol">i</span><span class="keyword">*</span><span class="number">1000</span> <span class="keyword">+</span> <span class="number">1</span>
+  <span class="symbol">end</span> <span class="assignement">&lt;-</span> <span class="keyword">(</span><span class="symbol">i</span> <span class="keyword">+</span> <span class="number">1</span><span class="keyword">)</span><span class="keyword">*</span><span class="number">1000</span>
+  <span class="symbol">d</span> <span class="assignement">&lt;-</span> <span class="functioncall">tm_map</span><span class="keyword">(</span><span class="symbol">d</span><span class="keyword">,</span> <span class="symbol">removeWords</span><span class="keyword">,</span> <span class="symbol">stopwords</span><span class="keyword">[</span><span class="symbol">start</span><span class="keyword">:</span><span class="symbol">end</span><span class="keyword">]</span><span class="keyword">)</span>
+  <span class="keyword">if</span><span class="keyword">(</span><span class="symbol">i</span> == <span class="number">4</span><span class="keyword">)</span><span class="keyword">{</span>
+    <span class="symbol">start</span> <span class="assignement">&lt;-</span> <span class="symbol">end</span>
+    <span class="symbol">end</span> <span class="assignement">&lt;-</span> <span class="functioncall">length</span><span class="keyword">(</span><span class="symbol">stopwords</span><span class="keyword">)</span>
+    <span class="symbol">d</span> <span class="assignement">&lt;-</span> <span class="functioncall">tm_map</span><span class="keyword">(</span><span class="symbol">d</span><span class="keyword">,</span> <span class="symbol">removeWords</span><span class="keyword">,</span> <span class="symbol">stopwords</span><span class="keyword">[</span><span class="symbol">start</span><span class="keyword">:</span><span class="symbol">end</span><span class="keyword">]</span><span class="keyword">)</span>
+  <span class="keyword">}</span>
+<span class="keyword">}</span>
+
+<span class="comment"># Stem words</span>
+<span class="symbol">d</span> <span class="assignement">&lt;-</span> <span class="functioncall">tm_map</span><span class="keyword">(</span><span class="symbol">d</span><span class="keyword">,</span> <span class="symbol">stemDocument</span><span class="keyword">)</span>
+
+<span class="comment"># Strip whitespace</span>
+<span class="symbol">d</span> <span class="assignement">&lt;-</span> <span class="functioncall">tm_map</span><span class="keyword">(</span><span class="symbol">d</span><span class="keyword">,</span> <span class="symbol">stripWhitespace</span><span class="keyword">)</span>
+
+<span class="comment"># Define bigram tokenizer</span>
+<span class="symbol">BigramTokenizer</span> <span class="assignement">&lt;-</span> <span class="keyword">function</span><span class="keyword">(</span><span class="formalargs">x</span><span class="keyword">)</span> <span class="keyword">{</span>
+  <span class="functioncall">unlist</span><span class="keyword">(</span><span class="functioncall">lapply</span><span class="keyword">(</span><span class="functioncall">ngrams</span><span class="keyword">(</span><span class="functioncall">words</span><span class="keyword">(</span><span class="symbol">x</span><span class="keyword">)</span><span class="keyword">,</span> <span class="functioncall">c</span><span class="keyword">(</span><span class="number">1</span><span class="keyword">,</span> <span class="number">2</span><span class="keyword">)</span><span class="keyword">)</span><span class="keyword">,</span> <span class="symbol">paste</span><span class="keyword">,</span> <span class="argument">collapse</span> <span class="argument">=</span> <span class="string">" "</span><span class="keyword">)</span><span class="keyword">,</span> <span class="argument">use.names</span> <span class="argument">=</span> <span class="number">FALSE</span><span class="keyword">)</span>
+<span class="keyword">}</span>
+
+<span class="comment"># Convert to a document term matrix (rows are documents, columns are words)</span>
+<span class="symbol">dtm</span> <span class="assignement">&lt;-</span> <span class="functioncall">as.matrix</span><span class="keyword">(</span><span class="functioncall">DocumentTermMatrix</span><span class="keyword">(</span><span class="symbol">d</span><span class="keyword">,</span> <span class="argument">control</span> <span class="argument">=</span> <span class="functioncall">list</span><span class="keyword">(</span><span class="argument">tokenize</span> <span class="argument">=</span> <span class="symbol">BigramTokenizer</span><span class="keyword">)</span><span class="keyword">)</span><span class="keyword">)</span>
+
+<span class="comment"># Remove elements with less than 3 words</span>
+<span class="symbol">dtm</span> <span class="assignement">&lt;-</span> <span class="symbol">dtm</span><span class="keyword">[</span><span class="keyword">,</span><span class="functioncall">colSums</span><span class="keyword">(</span><span class="symbol">dtm</span><span class="keyword">)</span> <span class="keyword">&gt;=</span> <span class="number">3</span><span class="keyword">]</span>
+<span class="symbol">dtm</span> <span class="assignement">&lt;-</span> <span class="functioncall">cbind</span><span class="keyword">(</span><span class="symbol">d</span><span class="keyword">$</span><span class="symbol">stars</span><span class="keyword">,</span> <span class="symbol">dtm</span><span class="keyword">)</span>
+<span class="functioncall">colnames</span><span class="keyword">(</span><span class="symbol">dtm</span><span class="keyword">)</span><span class="keyword">[</span><span class="number">1</span><span class="keyword">]</span> <span class="assignement">&lt;-</span> <span class="string">"stars"</span>
+
+<span class="comment"># Calculate words length</span>
+<span class="symbol">dtm</span> <span class="assignement">&lt;-</span> <span class="functioncall">cbind</span><span class="keyword">(</span><span class="functioncall">apply</span><span class="keyword">(</span><span class="symbol">dtm</span><span class="keyword">,</span> <span class="argument">MARGIN</span> <span class="argument">=</span> <span class="number">1</span><span class="keyword">,</span> <span class="argument">FUN</span> <span class="argument">=</span> <span class="symbol">sum</span><span class="keyword">)</span><span class="keyword">,</span> <span class="symbol">dtm</span><span class="keyword">)</span>
+<span class="functioncall">colnames</span><span class="keyword">(</span><span class="symbol">dtm</span><span class="keyword">)</span> <span class="assignement">&lt;-</span> <span class="string">"wordsLength"</span>
+
+<span class="comment"># Write to csv file</span>
+<span class="functioncall">write.csv</span><span class="keyword">(</span><span class="symbol">dtm</span><span class="keyword">,</span> <span class="functioncall">paste</span><span class="keyword">(</span><span class="symbol">loc</span><span class="keyword">,</span> <span class="string">'dtm.csv'</span><span class="keyword">,</span> <span class="argument">sep</span><span class="argument">=</span><span class="string">""</span><span class="keyword">)</span><span class="keyword">,</span> <span class="argument">row.names</span><span class="argument">=</span><span class="number">FALSE</span><span class="keyword">)</span>
+</pre>
+</body>
+</html>
