@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Is The Customer Always Right?</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -48,6 +48,10 @@
 				</section>
 
 				<section>
+					<p> All slogans deserve qualification.</p>
+				</section>
+
+				<section>
 					<img src="marshall_field.png" alt="Mountain View" style="width:400px;height:500px;">
 					<p>
 						The slogan is often attributed to Marshall Field.
@@ -56,28 +60,11 @@
 				</section>
 
 				<section>
-					<img src="marshall_fields.png" alt="Mountain View" style="width:400px;height:500px;">
-					<p>
-						Marshall Field's pioneered several retail innovations.
-					</p>
+					<p> The Customer is always speaking - but what is he saying? </p>
 				</section>
 
 				<section>
-					<p> Information-flow and power dynamics have shifted. </p>
-				</section>
-
-				<section>
-					<p> Is the customer <i>always</i> right? </p>
-				</section>
-
-				<section>
-					<p>The customer is always right...</p>
-					<p class="fragment">but all slogans deserve qualification.</p>
-					<p class="fragment">For instance...</p>
-				</section>
-
-				<section>
-					<p>Some customer complaints are more frequent than others</p>
+					<p>Some customer complaints are more frequent than others.</p>
 				</section>
 
 				<section>
@@ -101,9 +88,6 @@
 						# Remove stopwords
 						d <- tm_map(d, removeWords, stopwords("english"))
 
-						# Stem words
-						d <- tm_map(d, stemDocument)
-
 						# Convert to a document term matrix
 						dtm <- as.matrix(DocumentTermMatrix(d))
 						```
@@ -120,7 +104,7 @@
 						words <- c(
 						"Management" = "\\b[Mm]anage[rsment]*\\b",
 						"Website" = "\\b([Ww]eb)?[Ss]ite|[Oo]nline\\b",
-						"Returns" = "\\b[Rr]eturns?(ing)?\\b")
+						"Associate" = "\\b[Aa]ssociates?\\b|\\b[Cc]lerks?\\b|\\b[Ee]mployees?\\b")
 
 						# Count the words (w) associated with a particular text
 						countWords <- function(w, x) {
@@ -128,13 +112,13 @@
 						}
 
 						# Apply function to each word pattern for each text
-						dtm <-  sapply(d$reviews, function(x) sapply(words, function(w) countWords(w, x)))
+						dtm <-  t(sapply(d$reviews, function(x) sapply(words, function(w) countWords(w, x))))
 						```
 					</script>
 				</section>
 
 				<section>
-					<p>Some customer feedback is more useful than others</p>
+					<p>Some customer feedback is more useful than others.</p>
 				</section>
 
 				<section>
@@ -172,6 +156,7 @@
 					<script type="text/template">
 						## Interestingness
 						```
+						library(tm)
 						# Convert to a document term matrix
 						dtm <- as.matrix(DocumentTermMatrix(d,
 										control = list(weighting = weightTfIdf)))
@@ -189,15 +174,14 @@
 					</script>
 				</section>
 
-
 				<section>
-					<p>Some customers are more nuanced than others</p>
+					<p>Some customers are more nuanced than others.</p>
 				</section>
 
 				<section>
 					<img src="thinking_fast_slow.jpg" alt="Mountain View" style="width:350px;height:500px;">
 					<p>
-						Human are prone to exaggerate emotional coherance.
+						Humans are prone to exaggerate emotional coherance.
 					</p>
 				</section>
 
@@ -228,16 +212,61 @@
 				</section>
 
 				<section>
+					<p> In conclusion... <span class="fragment">some customers are more right than others.</span> </p>
+				</section>
+
+				<!-- <section>
 					<img src="henry_ford.gif" alt="Mountain View" style="width:700px;height:500px;">
 					<p><i>
 
 						“If I had asked people what they wanted, they would have said faster horses.”
 					</i></p>
 
+				</section> -->
+
+				<section>
+					<h2>Takeaways</h2>
 				</section>
 
 				<section>
-					<h2>Questions</h2>
+					<h3>#1: Go beyond word clouds to interpret and summarize feedback.</h3>
+				</section>
+
+				<section>
+					<h3>#2: Vectorize your unstructured data through tokenization and a document term matrix.</h3>
+				</section>
+
+				<section>
+					<h3>#3: Incorporate structured data to analyze unstructured data.</h3>
+				</section>
+
+				<section>
+					<h3>#4: Identify parts of speech and tf-idf to focus on the most intersting text.</h3>
+				</section>
+
+				<section>
+					<h3>#5: Utilize sentiment defined locally and globally to signal objective feedback.</h3>
+				</section>
+
+				<section>
+					<h3>#6: Make use of the available R packages. </h3>
+				</section>
+
+				<section>
+					<h3>#7: Don't be afraid to try your own approach. </h3>
+				</section>
+
+				<section>
+					<h3>#8: Have fun.</h3>
+				</section>
+
+				<section data-markdown>
+					## Contact me for resources.
+					* Twitter: [@josiahjdavis](https://twitter.com/josiahjdavis)
+
+					* E-mail: [josiahd@slalom.com](mailto:josiahd@slalom.com)
+
+					* Website: [www.josiahjdavis.com](http://josiahjdavis.com/)
 				</section>
 
 			</div>
@@ -252,8 +281,8 @@
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
-				progress: true,
+				controls: false,
+				progress: false,
 				history: true,
 				center: true,
 
