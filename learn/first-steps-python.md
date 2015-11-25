@@ -14,14 +14,14 @@ Anaconda is a python distribution, which means that it is not just Python, but a
 ## 3) Base Python Data Structures
 There are a couple of base python data structures you should be aware of right off the bat: the tuple, the dictionary, and the list. Here's how they are defined:
 
-* The [**list**](https://docs.python.org/2/tutorial/introduction.html#lists) is a mutable, iterable data structure. This is a simple list: ```['drinks', 'food', 'desert']```
+* The [list](https://docs.python.org/2/tutorial/introduction.html#lists) is a mutable, iterable data structure. This is a simple list: ```['drinks', 'food', 'desert']```
 
-* The [**tuple**](https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences) is an immutable, iterable data structure. This is a simple tuple: ```('drinks', 'food', 'desert')```.
+* The [tuple](https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences) is an immutable, iterable data structure. This is a simple tuple: ```('drinks', 'food', 'desert')```.
 
-* The [**dictionary**](https://docs.python.org/2/tutorial/datastructures.html#dictionaries) is "an unordered set of key: value pairs, with the requirement that the keys are unique (within one dictionary)." This is a simple dictionary: ```{'drinks': 'coffee', 'food': 'sandwhich', 'desert': 'pecan pie'}```.
+* The [dictionary](https://docs.python.org/2/tutorial/datastructures.html#dictionaries) is "an unordered set of key: value pairs, with the requirement that the keys are unique (within one dictionary)." This is a simple dictionary: ```{'drinks': 'coffee', 'food': 'sandwhich', 'desert': 'pecan pie'}```.
 
 
-Each of these data structures are important in it's own way, however, I'm not going to linger on these now. For now it is good enough to know that these data structure exist in base python. If you want more information the first place I recommend is [Section 5](https://docs.python.org/2/tutorial/index.html) of the tutorial on the python website. Personally, when I use base Python data structures it is usually in the context of packages that provide much richer functionality, such as... NumPy and Pandas.
+Each of these data structures are important in it's own way, however, I'm not going to linger on these now. For now it is good enough to know that these data structure exist in base python. If you want more information the first place I recommend is [Section 5](https://docs.python.org/2/tutorial/index.html) of the tutorial on the python website. Personally, when I use base Python data structures it is usually in the context of packages that provide much richer functionality... such as NumPy and Pandas.
 
 ## 4) NumPy and Pandas
 Python does not automatically vectorize operations within its core data structures. This means, for instance, that if you try to add 1 to a python list of numbers, it won't go through each list element and add 1 to it. Depending on your background, this may or may not come as a shock to you. (Depending on your background, you might be wondering why I would expect this to elicit an emotional respose in the first place.) If you're coming from a engineering background and have used [MATLAB](http://www.mathworks.com/products/matlab/), or if you're coming from a Statistics / Econometrics backround and have used [R](https://en.wikipedia.org/wiki/R_(programming_language)) you'll be accustomed to languages that "think" in terms of tabular data structures. To get the equivalent behavior in Python, you're going to want to use NumPy (pronounced "Numb-Pie", not "Numb-Pee") and Pandas.
@@ -52,4 +52,4 @@ A python package is a collection of functionality that you may find useful. In o
 ## Going from here
 We've only scratched the surface of what it means to use Python for Data Science. We haven't discussed *how* to use Pandas or NumPy for data analysis, and we haven't discussed other aspects of Data Science such as Machine Learning, Statistics, and Natural Language Processing. However, time spent learning Pandas and NumPy is time well spent, since these packages are  foundational to using the more advanced topics in Data Science.
 
-Was this information useful? What did information should I have included? Let me know what you think on [twitter](https://twitter.com/josiahjdavis) or send me an [e-mail](mailto:josiah.j.davis@gmail.com).
+Was this information useful? What did I miss? Let me know what you think on [twitter](https://twitter.com/josiahjdavis) or send me an [e-mail](mailto:josiah.j.davis@gmail.com).
