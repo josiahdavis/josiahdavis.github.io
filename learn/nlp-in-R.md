@@ -2,6 +2,8 @@
 layout: default
 title: How to Perform Natural Language Processing in R
 ---
+
+# How to Perform Natural Language Processing in R
 When I started learning NLP in R I found resources here and there but I never found a great resource for learning the syntax. This is the reference guide I wish I had when I started learning NLP. You can find the data I'm using in these examples [here](https://github.com/josiahdavis/nlp-in-R).
 
 <div style="overflow:auto;"><div class="geshifilter"><pre class="r geshifilter-R" style="font-family:monospace;"><span style="color: #666666; font-style: italic;"># ANALYSIS OF YELP DATA</span>
