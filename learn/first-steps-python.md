@@ -19,9 +19,15 @@ Anaconda is a python distribution, which means that it is not just Python, but a
 
 There are a couple of base python data structures you should be aware of right off the bat: the tuple, the dictionary, and the list. Here's how they are defined:
 
-* The [list](https://docs.python.org/2/tutorial/introduction.html#lists) is a mutable, iterable data structure. This is a simple list: ```['drinks', 'food', 'desert']```. You can learn about lists from [Section 3.1.4.](https://docs.python.org/2/tutorial/introduction.html#lists) [](https://docs.python.org/2/tutorial/introduction.html#lists) and [Section 5.1.](https://docs.python.org/2/tutorial/datastructures.html#more-on-lists) of The Python Software Foundation's tutorial.
-* The [tuple](https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences) is an immutable, iterable data structure. This is a simple tuple: ```('drinks', 'food', 'desert')```. You can learn about tuples from [Section 5.3.](https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences) [](https://docs.python.org/2/tutorial/introduction.html#lists)of The Python Software Foundation's tutorial.
-* The [dictionary](https://docs.python.org/2/tutorial/datastructures.html#dictionaries) is "an unordered set of key: value pairs, with the requirement that the keys are unique (within one dictionary)." This is a simple dictionary: ```{'drinks': 'coffee', 'food': 'sandwhich', 'desert': 'pecan pie'}```. You can learn about dictionaries from [Section 5.5.](https://docs.python.org/2/tutorial/datastructures.html#dictionaries) [](https://docs.python.org/2/tutorial/introduction.html#lists)of The Python Software Foundation's tutorial.
+* The **list** is a mutable, iterable data structure. This is a simple list: ```['drinks', 'food', 'desert']```. You can learn about lists from [Section 3.1.4.](https://docs.python.org/2/tutorial/introduction.html#lists) [](https://docs.python.org/2/tutorial/introduction.html#lists) and [Section 5.1.](https://docs.python.org/2/tutorial/datastructures.html#more-on-lists) of The Python Software Foundation's tutorial.
+  
+  ​
+  
+* The **tuple** is an immutable, iterable data structure. This is a simple tuple: ```('drinks', 'food', 'desert')```. You can learn about tuples from [Section 5.3.](https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences) [](https://docs.python.org/2/tutorial/introduction.html#lists)of The Python Software Foundation's tutorial.
+  
+  ​
+  
+* The **dictionary** is "an unordered set of key: value pairs, with the requirement that the keys are unique (within one dictionary)." This is a simple dictionary: ```{'drinks': 'coffee', 'food': 'sandwhich', 'desert': 'pecan pie'}```. You can learn about dictionaries from [Section 5.5.](https://docs.python.org/2/tutorial/datastructures.html#dictionaries) [](https://docs.python.org/2/tutorial/introduction.html#lists)of The Python Software Foundation's tutorial.
 
 Each of these data structures are important in it's own way, however, for now it is good enough to know that these data structure exist in base python. Any additional knowledge is a plus. On a personal note, when I use base Python data structures it is often in the context of packages that provide much richer functionality... such as NumPy and Pandas.
 
