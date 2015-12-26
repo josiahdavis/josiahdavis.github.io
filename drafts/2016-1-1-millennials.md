@@ -41,19 +41,19 @@ The grey line is shows the data from the results I reproduced (three years) and 
 
 ## Extrinsic Rewards
 
-![Alt text](/extrinsic.png)
+![Alt text](/drafts/extrinsic.png)
 
 When it comes to extrinsic rewards, there is a clear generational difference, although it might be different than the one you were expecting. If Millennials are narcissistic, this data certainly doesn't reveal it. Millennials are less likely to value status and prestige in a job than Generation X, and they are also less interested in promotion and advancement in their career. However, these differences pale in comparison to the huge increase between the Baby Boomers and Generation X. In fact, of all of the survey questions these questions have the largest differences of any generational comparison. One theory on why this is true is that there is a cyclical nature to valuing extrinsic rewards like money, and prestige. If your parents were poor, chances are you wanted to make a better life. If your parents were well-to-do but had a poor work-life balance, maybe you went to the other extreme. While this makes sense on an individual level, what's interesting here is to see the pattern emerge for the generation as a whole.
 
 ## Intrinsic Rewards
 
-![Alt text](/intrinsic.png)
+![Alt text](/drafts/intrinsic.png)
 
 One of the most common reasons Millennials are often praised is for their intrinsic motivation to work. That is, the chance to do interesting, creative work, and learn valuable skills. All of this sounds great for Millennials. It may even resonate with your personal experience. There is only one problem. It is patently false. For six out of seven questions relating to intrinsic rewards, Millennials scored significantly lower than Generation X. Millennials as a whole value "A job that is interesting to do" significantly less than Generation X. Millennials value a job that uses uses your skills and abilities - lets you do the things you an do best" significantly less than Generation X. Millennials value "A job where you can see the results of what you do" significantly less than Generation X. Think that Millennials put a premium on authenticity? Think again. Millennials valued having a "job where you do not have to pretend to be a type of person that you are not" significantly less than the previous generation. To be clear, some of the effect sizes are small - they are much smaller than the increases that we saw for Generation X's value for extrinsic rewards, for instance - however they are significant decreases.
 
 ## Leisure Rewards
 
-![Alt text](/leisure.png)
+![Alt text](/drafts/leisure.png)
 
 When it comes to working at a leisurely pace, or having a job that allows time off, it appears that each generation progressively values leisure more than the previous generation. This was true for "A job that leaves you a lot of time for other things in your life", "A job where you have more than two weeks of vacation" and "A job with an easy pace that let's you work slowly". 
 
@@ -63,13 +63,13 @@ But why the increase in other leisure rewards such as vacation time? With the pr
 
 ## Altruistic Rewards
 
-![Alt text](/altruistic.png)
+![Alt text](/drafts/altruistic.png)
 
 General Electric created a set of humorous parody videos entitled: ["What's the matter with Owen?"](https://www.youtube.com/watch?v=OpDIEJrog3s) In one of the videos Owen announces to his friends that he has received a software engineering job at General Electric, where he will be able to "transform the way the world works" through "helping turbines power cities". This announcement is overshadowed by one of his friends who works for a (fictitious) company called zazzies where his job is to create funny cat photos. The video implies that Millennials are generally more impressed an app that is ultimately meaningless than the possibility of transforming the world. There might be some truth to that. According to the data, Millennials appear to be very slightly less likely to value work that helps others and is worthwhile to society. However, there is another way to view this data.
 
 ## Social Rewards
 
-![Alt text](/social.png)
+![Alt text](/drafts/social.png)
 
 Similar to altruistic rewards, social rewards also appear decrease from one generation to the next. Millennials value "A job that gives you a chance to make friends" and "A job that permits contact with lots of people" significantly less than Generation X. One way of looking at this data is to call Millennials anti-social, and blame the increased usage of personal technology, social media, the iPhone, etc… Judging by [one poll](https://reason.com/poll/2014/08/19/65-of-americans-say-millennials-are-enti) this seems to square with popular opinion. Another perspective is too take these responses in light of the [economic hardship](http://www.vox.com/2014/12/16/7391843/millennials-economy-screwed) that Millennials experience. Millennials have higher rates of unemployment, higher student loans, and lower incomes than past generations. Coming from that perspective, working with your friends is higher up the hierarchy of needs, than say, having a job that allows you to be gainfully employed so you can pay off your student loans.
 
