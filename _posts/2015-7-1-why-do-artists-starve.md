@@ -2,6 +2,7 @@
 layout: post
 title: Why Do Artists Starve?
 synopsis: Choosing to go in to the arts in order to make money is a little bit like choosing to go on to The Bachelor to find your one true love. It's not that it's impossible, but it sure isn't likely.
+image: 'public/artists.jpg'
 ---
 
 Choosing to go in to the arts in order to make money is a little bit like choosing to go on to The Bachelor to find your one true love. It's not that it's impossible, but it [sure isn't likely](http://www.huffingtonpost.com/2013/08/12/bachelor-couples_n_3728241.html). This is a well known fact among artists. According to the [Bureau of Labor Statistics](http://www.bls.gov/oes/current/naics4_711100.htm) the median hourly wage for performing artists is less than $30. This might sound like a decent hourly rate, except when you consider that many artists are only paid for performances and limited rehearsals (if any) and that many artists live in cities like New York, San Francisco, and Chicago, where the cost of living is considerably higher than average. But what is it about the artistic profession that leads many artists to struggle making ends meet?

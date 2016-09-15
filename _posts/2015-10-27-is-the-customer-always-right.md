@@ -2,6 +2,7 @@
 layout: post
 title: Is The Customer Always Right?
 synopsis: Slogans are by definition everywhere. They are used in business, marketing, political campaigns, and in our everyday life to highlight something of importance. But all slogans deserve qualification.
+image: '/public/customers.jpg'
 ---
 
 Slogans, or common sayings, are by definition everywhere. They are used in business, marketing, political campaigns, and in our everyday life to highlight something of importance. But all slogans deserve qualification. Take the common phrase: "A bird in the hand is worth two in the bush", which means that it's better to have a garaunteed small reward than to take a risk for a large reward. And this is generally true. But there are also situations where the principle doesn't apply, such as starting a new retailing business, for instance. In some cases, the risk of losing the bird for the chance of catching the two might be worth taking.
@@ -27,9 +28,11 @@ Perhaps unsurprisingly, this data suggests that people shop at Macy's for the co
 <iframe src="http://bl.ocks.org/josiahdavis/raw/ba23b5ebf0ed1b8d3eb2/" marginwidth="0" marginheight="0" frameborder="0" height="500px" width="960px" scrolling="no"></iframe>
 
 In many cases, customers leave feedback with good intentions. They want the business to know what they really need, and they want to help others be more educated consumers. Unfortunately, not all customer feedback is equally useful. Some customers simply don't have much to say. One customer's entire review consisted of the following:
+
 > Really an enjoyable Macy's. not too big but has all your needs. Customer service is also good!
 
 Other customers use social media as platforms for personal catharsis rather than collective good. For instance, one despondent customer said:
+
 > Macy's is not Marshall Fields, nor will it ever be. Maybe it is more like Marshall's, without the low prices...
 
 While many factors determine how useful a review may or may not be, one thing is clear: all human beings are vulnerable to letting one aspect of an experience bias their opinion of all aspects of their experience. This is commonly referred to as the [Halo Effect](https://en.wikipedia.org/wiki/Halo_effect). Perhaps this is one reason why there are more useful 2, 3, and 4 star reviews, than 1 and 5 star reviews.

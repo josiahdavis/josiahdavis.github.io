@@ -1,9 +1,9 @@
 ---
 layout: post
-title: What Can UFO Sightings Tell Us About Extra-Terrestrials?
+title: What Do We Know About Extra-Terrestrials?
 synopsis: In September 1993, 12 million people watched the premier of the cult television show, X-Files. It is likely that these numbers are low, as they only count human viewership.
+image: '/public/ufos.jpeg'
 ---
-
 
 *[Daniel Henebery](http://www.questionable-economics.com/what-do-we-know-about-aliens/) and I had a lot of fun writing this article together. We are especially grateful to the National UFO Reporting Center. We're skeptics, but we still appreciate the hard work that made this possible.*
 
@@ -37,7 +37,7 @@ This schedule only makes sense if alien activity follows some human activity. Gi
 
 ### Aliens Love America
 
-<iframe src="http://bl.ocks.org/josiahdavis/raw/6d7a81fd3819278e205f" marginwidth="0" marginheight="0" frameborder="0" height="500px" width="750px" scrolling="no"></iframe>
+<iframe src="https://cdn.rawgit.com/josiahdavis/044b6efc12278b627687/raw/8a089818e7c69305fa70d5d0a322547adfd5fff1/index.html" marginwidth="0" marginheight="0" frameborder="0" height="500px" width="750px" scrolling="no"></iframe>
 
 The movie [Independence Day](http://www.imdb.com/title/tt0116629/) is slander and [Roland Emmerich](http://www.imdb.com/name/nm0000386/?ref_=tt_ov_dr) is a hack. Aliens are not bent on world domination. They love America and they celebrate the 4th of July.
 
