@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Is The Customer Always Right?
+blog: josiahjdavis
 synopsis: Slogans are by definition everywhere. They are used in business, marketing, political campaigns, and in our everyday life to highlight something of importance. But all slogans deserve qualification.
 image: '/public/customers.jpg'
 ---

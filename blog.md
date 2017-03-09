@@ -3,6 +3,8 @@ layout: page
 title: ""
 ---
 
+![plot1](/public/mds.png)
+
 <ul class="post">
   {% for post in site.posts %}
     <li>
