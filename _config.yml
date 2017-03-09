@@ -3,14 +3,14 @@ permalink:           /:title
 
 # Setup
 title:               Josiah Davis
-tagline:
+tagline:             
 url:                 http://getpoole.com
 paginate:            1
 baseurl:             ""
 
 pages_list:
-  # Blog: '/blog'
-  Teaching: http://learningdatascience.com/
+  Mad Data Science: '/mad-data-science/'
+  # Teaching: http://learningdatascience.com/
   Home: '/'
 
 
