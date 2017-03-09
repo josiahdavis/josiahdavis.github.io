@@ -3,7 +3,7 @@ permalink:           /:title
 
 # Setup
 title:               Josiah Davis
-tagline:             
+tagline:
 url:                 http://getpoole.com
 paginate:            1
 baseurl:             ""
@@ -11,7 +11,7 @@ baseurl:             ""
 pages_list:
   Mad Data Science: '/mad-data-science/'
   # Teaching: http://learningdatascience.com/
-  Home: '/'
+  # Home: '/'
 
 
 
