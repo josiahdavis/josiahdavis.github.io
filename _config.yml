@@ -9,7 +9,7 @@ paginate:            1
 baseurl:             ""
 
 pages_list:
-  Mad Data Science: '/mad-data-science/'
+  # Mad Data Science: '/mad-data-science/'
   # Teaching: http://learningdatascience.com/
   # Home: '/'
 

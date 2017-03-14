@@ -3,8 +3,75 @@ layout: page
 title: ""
 ---
 
+<style>
+/* ------------------- Grid -------------------*/
 
-<img src="/profile.JPG" alt="Josiah Davis">
+.container {
+  max-width: 50em;
+  width:60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  clear: both;
+  margin-right: -1%;
+  margin-left:  -1%;
+
+}
+
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ */
+.row {
+  *zoom: 1;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6 {
+  float: left;
+  width:100%;
+  padding: 0 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 40em) {
+  .grid-1 { width: 16.6666666%; }
+  .grid-2 { width: 33.3333333%; }
+  .grid-3 { width: 50%; }
+  .grid-4 { width: 66.6666666%; }
+  .grid-5 { width: 83.3333333%; }
+  .grid-6 { width: 100%; }
+
+}
+</style>
+
+
+<!-- <img src="/profile.JPG" alt="Josiah Davis"> -->
 
 <p>
-I'm a data scientist and consultant working in San Francisco. Previously, I was an instructor of General Assembly's 66-hour Data Science course where I was rated by students as one of the top two instructors in the history of the course. I am currently enrolled in graduate studies in Statistics at the University of California, Berkeley.</p>
+I'm a data scientist and consultant working in San Francisco. Previously, I was an instructor of General Assembly's 66-hour Data Science course. I am currently enrolled in graduate studies in Statistics at the University of California, Berkeley.</p>
+
+<section class="gallery">
+  <div class="row">
+    <a href="/mad-data-science/"><img src="public/mds_wide_1.png" class="grid-6"></a>
+    <a href="/mfa/"><img src="public/mfa_wide.png" class="grid-6"></a>
+    <a href="/learningdatascience/"><img src="public/lds_wide.png" class="grid-6"></a>
+    <!-- <a href="/electricity-usage-analytics/"><img src="public/electricity_1.png" class="grid-3"></a> -->
+  </div>
+</section>
