@@ -2,7 +2,7 @@
 layout: page
 title: ""
 ---
-![Josiah](../public/lds_big_1.png)
+![Josiah](../../public/lds_big_1.png)
 
 I created Learning Data Science to provide training services for companies trying to transition into the field of Data Science. I have provided corporate workshops on a variety of topics including:
 

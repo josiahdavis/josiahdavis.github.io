@@ -2,7 +2,7 @@
 layout: page
 title: ""
 ---
-![Josiah](../public/mfa_big.png)
+![Josiah](../../public/mfa_big.png)
 
 During my Master's degree program, I led a team of four to create an R package for my class on Statistical Computing. I organized team meetings, split up work assignments, conducted regular code reviews, developed an early prototype, wrote several key functions and created the final presentation.
 
