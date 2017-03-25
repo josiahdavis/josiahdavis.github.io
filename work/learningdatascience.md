@@ -15,4 +15,4 @@ I created Learning Data Science to provide training services for companies tryin
 * Nonparametric Statistics
 * Python
 
-Visit the [training page](http://learningdatascience.com/workshops/) more information or sign up for my [free email mini course](http://learningdatascience.com).
+Visit the [training page](http://learningdatascience.com/workshops/) more information or sign up for my [free mini course](http://learningdatascience.com).
