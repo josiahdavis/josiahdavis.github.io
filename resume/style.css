@@ -164,6 +164,7 @@ footer hr {
   float: left;
   width:100%;
   padding: 0 1%;
+  line-height: 1.8;
   margin-left: auto;
   margin-right: auto;
 }
