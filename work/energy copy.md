@@ -4,13 +4,15 @@ title: ""
 ---
 ![Josiah](../../public/electricity_big_1.png)
 
-A large utilities provider wanted to conduct weather-based forecasting for individual residential customers' electricity and gas consumption. This tool was motivated by the following applications:
+A large organization wanted to conduct hourly forecasting for individual customer behavior. This project was motivated by the following applications:
 
 * Company planning and resource allocation
-* Measurement and evaluation of energy efficiency measures
+* Measurement and evaluation of company initiatives
 * Customer care and outreach
 
 As the lead data scientist on the project, I contributed several ideas that I iteratively tested and refined, combining techniques from classical forecasting, machine learning, and modern portfolio theory.
+
+Data Description
 
 * **Individual schedule-effect:** Customer-specific index that that identified their daily and hour schedule and adjusted their time-series
 * **Supervised segmentation:** I used classification and regression trees based off of demographic data and typical utility utilization to put customers into segments
