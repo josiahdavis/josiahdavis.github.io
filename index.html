@@ -1,72 +1,17 @@
 ---
-layout: page
-title: ""
+layout: default
+title: Home
 ---
 
-<style>
-/* ------------------- Grid -------------------*/
-
-.row {
-  clear: both;
-  margin-top: 5%;
-}
-
-.row:before,
-.row:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.row:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- */
-.row {
-  *zoom: 1;
-}
-
-.grid-1,
-.grid-2,
-.grid-3,
-.grid-4,
-.grid-5,
-.grid-6 {
-  float: left;
-  width:100%;
-  padding: 0 1%; /* 1% */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.grid-2:hover{
-  opacity: 0.95;
-}
-
-@media screen and (min-width: 30em) {
-  .grid-1 { width: 16.6666666%; }
-  .grid-2 { width: 33.3333333%; }
-  .grid-3 { width: 50%; }
-  .grid-4 { width: 66.6666666%; }
-  .grid-5 { width: 83.3333333%; }
-  .grid-6 { width: 100%; }
-}
-
-</style>
-
-<p>I work​ as a Data Scientist ​in San Francisco​ with a specialty in Causal Inference and Experimental Design. Over the past 6 years I have consulted for clients such as Department of Veteran Affairs, Pacific Gas and Electric, Walmart and Genentech. I received my Master's in Statistics from UC, Berkeley.</p>
-
-<section class="gallery">
-  <div class="row">
-    <a href="/work/causal"><img src="public/icon_causal.png" class="grid-2"></a>
-    <a href="http://learningdatascience.com/workshops/"><img src="public/icon_lds.png" class="grid-2"></a>
-    <a href="/work/customer"><img src="public/icon_customer.png" class="grid-2"></a>
-    <a href="/work/mfa"><img src="public/icon_mfa.png" class="grid-2"></a>
-    <a href="/mad-data-science/"><img src="public/icon_mds.png" class="grid-2"></a>
-    <a href="/work/talks"><img src="public/icon_talks.png" class="grid-2"></a>
-    <a href="/work/responsive-d3"><img src="public/icon_responsive_d3.png" class="grid-2"></a>
-    <a href="/work/general-assembly"><img src="public/icon_ga.png" class="grid-2"></a>
-  </div>
-</section>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h3 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h3>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%B %-d, %Y" }}</time>
+  </article>
+  {% endfor %}
+</div>

@@ -5,13 +5,11 @@
 
 .page,
 .post {
-  margin-bottom: 2em;
-        list-style-type: none;
+  margin-bottom: 4em;
 
   li + li {
     margin-top: .25rem;
   }
-
 }
 
 // Blog post or page title
@@ -31,11 +29,6 @@
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
-}
-
-.post-date-home {
-  float: right;
-  margin-top: 0rem;
 }
 
 
@@ -63,7 +56,7 @@
     }
 
     a:hover {
-      color: $link-color;
+      color: #268bd2;
       text-decoration: none;
 
       small {

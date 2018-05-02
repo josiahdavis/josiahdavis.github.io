@@ -1,19 +1,15 @@
 # Permalinks
-permalink:           /:title
+permalink:           pretty
 
 # Setup
 title:               Josiah Davis
 tagline:
-url:                 http://getpoole.com
-paginate:            1
+url:                 www.josiahjdavis.com
+paginate:            100
 baseurl:             ""
 
 pages_list:
-  # Mad Data Science: '/mad-data-science/'
-  # Teaching: http://learningdatascience.com/
-  # Home: '/'
-
-
+  Home: '/'
 
 # Assets
 #
@@ -25,8 +21,8 @@ sass:
 # About/contact
 author:
   name:              Josiah Davis
-  url:               https://twitter.com/josiahjdavis
-  email:             josiah.j.davis@gmail.com
+  url:
+  email:
 
 # Custom vars
 version:             2.0.0
