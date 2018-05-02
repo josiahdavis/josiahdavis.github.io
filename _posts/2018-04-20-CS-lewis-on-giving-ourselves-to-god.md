@@ -4,6 +4,8 @@ title: C.S. Lewis on Giving Ourselves to God
 tags: summary, christianity
 ---
 
+*C.S. Lewis preached the sermon "On a Slip of the Tongue" on January 29, 1956 at Cambridge's Magdalen College chapel. It was the last sermon he preached. I read it in the complication of his papers, The Weight of Glory. This is a summary and outline of the main points. All quotes are his unless otherwise noted.*
+
 ## Summary
 
 There is a temptation among Christians to view the Christian life like paying your taxes. We agree with the main principle of paying taxes, yet we nevertheless want to pay the minimum amount possible. But God does not want more of our time and attention. He wants us. God is love, but he cannot bless us unless we entrust ourselves completely to Him.
@@ -39,5 +41,3 @@ He then counters two possible misinterpretations of what he is saying:
 > I do not mean that each of us will necessarily be called to be a martyr or even an ascetic. That's as may be. For some (nobody knows which) the Christian life will include much leisure, many occupations we naturally like. But these will be received from God's hands.
 
 > Of course, I don't mean that I can therefore as they say "sit back." What God does for us, He does in us... We may never, this side of death drive the invader out of our territory, but we must be in the Resistance, not in the Vichy government.
-
-C.S. Lewis preached the sermon "On a Slip of the Tongue" in 1956. It was the last sermon he preached. I read it in the complication of his papers, The Weight of Glory.

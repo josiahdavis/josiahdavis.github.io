@@ -4,6 +4,8 @@ title: C.S. Lewis on Membership vs. Collectivism
 tags: summary, christianity
 ---
 
+*C.S. Lewis read "Membership" on February 10, 1945 to the Society of St. Alban and St. Sergius, Oxford. I read it in the complication of his papers, The Weight of Glory. This is a summary and outline of the main points. All quotes are from the lecture unless otherwise noted.*
+
 ## Summary
 
 The Christian life is not a private affair. But how can the Christian life at once reject individualism and yet counteract the secular notion of collectivism? The answer, Lewis says, is to consider the difference between Christian membership and secular collectivism. First, members in the body of Christ, like organs in a human body, have complementary functions, structure and even dignity whereas in the secular collective all members are interchangeable. Second, the body of Christ is eternal, whereas other collective bodies (e.g., clubs, societies, nations, etc...) are temporal.
@@ -49,5 +51,3 @@ This is not how we were made to live.
 **"Christianity cuts across the antithesis between individualism and collectivism"**
 
 > [Christianity] sets its face relentlessly against our natural individualism; on the other hand, it gives back to those who abandon individualism an eternal possession of their own being, even of their bodies.
-
-C.S. Lewis delivered the sermon "On Membership" in 1945. I read it in the complication of his papers, The Weight of Glory.
