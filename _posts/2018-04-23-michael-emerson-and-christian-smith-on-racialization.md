@@ -6,11 +6,15 @@ tags: summary, race
 
 *Michael O. Emerson and Christian Smith published Divided by Faith: Evangelical Religion and the Problem of Race in America in 2000. I found it incredibly helpful and I highly recommend. This is a summary of their first and fourth chapters which focus on the idea of Racialization and differing explanations for it among evangelicals.*
 
+## Summary
+
 Many white evangelicals take a "benign view" of the Race Issue. However, a lack of awareness is a luxury only White Americans can enjoy. America is a nation in which "race matters profoundly for differences in life experiences, life opportunities and social relationships." White Americans tend to attribute this difference to individual factors such as lack of motivation or responsibility on the part of the individual whereas black Americans tend to attribute the difference due to structural factors such as lack of access to quality education and systematic discrimination. White and Black evangelicals are more divided in their answers than Black and White Americans in general, thus we are "Divided by Faith". The rest of the book provides a theory for why this is the case complete with extensive historical and sociological analysis.
 
-**A Lack of Awareness on the Race Issue**
+## Outline
 
-Many white evangelicals think that the Race Issue is really just mislabeled conflict, or that it is created by talking about it. Debbie and Mary are two prototypical White Evangelicals in this regard:
+**Many white evangelicals think that the Race Issue is really just mislabeled conflict, or that it is created by talking about it.**
+
+Debbie and Mary are two prototypical White Evangelicals in this regard:
 
 *Mislabeled Conflict, Rare*
 
@@ -20,9 +24,9 @@ Many white evangelicals think that the Race Issue is really just mislabeled conf
 
 > From Mary's perspective, the race problem would disappear if it were not for separatists dividing the nation. Although we will always have a few prejudiced people, the race problem and racism are essentially dead, living on only because of the activities of separatists and others who stand to gain from the existence of a race problem.
 
-**Is America a Racialized Society? Yes.**
+**However, a lack of awareness of the Race Issue is a luxury that only White Americans can enjoy.**
 
-However, a lack of awareness of the Race Issue is a luxury that only White Americans can enjoy. Americans live in a racialized society, one in which our concept of "race matters profoundly for differences in life experiences, life opportunities, and social relationships." This does not assume, however, that most Americans are self-consciously racist.
+Americans live in a racialized society, one in which our concept of "race matters profoundly for differences in life experiences, life opportunities, and social relationships." This does not assume, however, that most Americans are self-consciously racist.
 
 > because radicalization is embedded within the normal everyday operation of institutions, this framework understands that people need not intend their actions to contribute to racial division and inequality for their actions to do so.
 
