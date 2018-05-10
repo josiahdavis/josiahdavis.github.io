@@ -4,7 +4,7 @@ title: Michael O. Emerson and Christian Smith on Racialization
 tags: summary, race
 ---
 
-*Michael O. Emerson and Christian Smith published Divided by Faith: Evangelical Religion and the Problem of Race in America in 2000. I found it incredibly helpful and I highly recommend. This is a summary of their first and fourth chapters.*
+*Michael O. Emerson and Christian Smith published Divided by Faith: Evangelical Religion and the Problem of Race in America in 2000. I found it incredibly helpful and I highly recommend. This is a summary of their first and fourth chapters which focus on the idea of Racialization and differing explanations for it among evangelicals.*
 
 Many white evangelicals take a "benign view" of the Race Issue. However, a lack of awareness is a luxury only White Americans can enjoy. America is a nation in which "race matters profoundly for differences in life experiences, life opportunities and social relationships." White Americans tend to attribute this difference to individual factors such as lack of motivation or responsibility on the part of the individual whereas black Americans tend to attribute the difference due to structural factors such as lack of access to quality education and systematic discrimination. White and Black evangelicals are more divided in their answers than Black and White Americans in general, thus we are "Divided by Faith". The rest of the book provides a theory for why this is the case complete with extensive historical and sociological analysis.
 
@@ -47,7 +47,5 @@ The authors surveyed and interviewed thousands of individuals to get a pulse on 
 In aggregate, Smith and Emerson found that White Americans tend to emphasize individual factors, such as lack of motivation and taking individual responsibility while African American respondents tended to emphasize structural factors, such as discrimination and lack of educational opportunity.
 
 However, when it comes to Evangelicals, White Evangelical respondents emphasized individual factors even more than than white respondents in general and Black evangelical respondents emphasized structural factors such as discrimination even more than black respondents in general. Thus, Evangelicals are more divided on the issue of race than even the general American public is.
-
-**Why is it that Evangelicals are so divided on this issue?**
 
 Using a combination of historical analysis, analysis of Christian Publications over time, surveys and one-on-one interviews, the rest this book explores the history and provides a theory of why this division has and continues to exist in American Evangelicalism.
