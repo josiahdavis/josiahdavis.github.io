@@ -6,7 +6,7 @@ tags: summary, science
 
 ## Summary
 
-What is the nature of science? Is science fundamentally data and methodology driven or is it based on an particular and unproven view of the world? Originally published in 1962, the Structure of Scientific Revolutions challenges the conventional understanding of science through a deep analysis of historical examples such as the Copernican, Newtonian, and Lavoisierian Revolutions. Thomas Kuhn, a former physicist turned historian argues against a cumulative and deterministic view of science, one where slowly knowledge is added upon past knowledge through strict following of a "scientific methodology", which was famously advocated for by Karl Popper. Rather, he stresses the idea of a paradigm, which is an accomplishment that defines "acceptable" problems for normal research but is ultimately based on a particular view of the world which cannot be proved by simple appeals to data and falsified hypotheses. The fact that almost all normal science presupposes these these fundamental paradigms, and that these paradigms can be (and are) completely replaced with new paradigms if (a) they are found to be seriously lacking and (b) an alternative paradigm is supplied, raises the question of what it means to make scientific progress.
+What is the nature of science? Is science fundamentally data and methodology driven or is it based on an particular and unproven view of the world? Originally published in 1962, [The Structure of Scientific Revolutions](https://www.amazon.com/Structure-Scientific-Revolutions-Thomas-Kuhn/dp/0226458083) challenges the conventional understanding of science through a deep analysis of historical examples such as the Copernican, Newtonian, and Lavoisierian Revolutions. Thomas Kuhn, a former physicist turned historian argues against a cumulative and deterministic view of science, one where slowly knowledge is added upon past knowledge through strict following of a "scientific methodology", which was famously advocated for by Karl Popper. Rather, he stresses the idea of a paradigm, which is an accomplishment that defines "acceptable" problems for normal research but is ultimately based on a particular view of the world which cannot be proved by simple appeals to data and falsified hypotheses. The fact that almost all normal science presupposes these these fundamental paradigms, and that these paradigms can be (and are) completely replaced with new paradigms if (a) they are found to be seriously lacking and (b) an alternative paradigm is supplied, raises the question of what it means to make scientific progress.
 
 ## Questions and Answers
 
@@ -43,7 +43,7 @@ These achievements possess two critical characteristics:
 
 > ...the recognition that nature has somehow violated the paradigm-induced expectations that govern normal science (Chapter VI, Anomoly and the Emergence of Scientific Discoveries).
 
-**Q: What is a Srisis?**
+**Q: What is a Crisis?**
 
 > [A situation where] the awareness of anomaly had lasted so long and penetrated so deep that one can appropriately describe the fields affected by it as in a state of growing crisis (Chapter VII, Crisis and the Emergence of Scientific Discoveries).
 
@@ -69,7 +69,7 @@ The [Copernican Revolution](https://en.wikipedia.org/wiki/Copernican_Revolution)
 
 **Q: Is Kuhn anti-truth?**
 
-> Unfortunately [Kuhn's work] was also abused by the wave of skeptical intellectuals who called the very idea of truth in question. Kuhn had no such intention. He was a fact lover and a truth seeker (Preface by Ian Hacking).
+> Unfortunately [Kuhn's work] was also abused by the wave of skeptical intellectuals who called the very idea of truth in question. Kuhn had no such intention. He was a fact lover and a truth seeker (Introductory Essay by Ian Hacking).
 
 **Q: So, what do Scientists do?**
 
