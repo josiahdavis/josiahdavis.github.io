@@ -14,7 +14,7 @@ What is the nature of science? Is science fundamentally data and methodology dri
 
 > normal science with a paradigm and a dedication to solving puzzles; followed by serious anomalies, which lead to a crisis; and finally resolution of the crisis by a new paradigm (Introductory Essay by Ian Hacking).
 
-**Q: What is normal science?**
+**Q: What is Normal Science?**
 
 > The most striking feature of the normal research problems we have just encountered is how little they aim to produce major novelties, conceptual or phenomenal (Chapter VII, Crisis and the Emergence of Scientific Discoveries).
 
@@ -28,7 +28,7 @@ What is the nature of science? Is science fundamentally data and methodology dri
 
 > There must also be rules that limit both the nature of acceptable solutions and the steps by which they are to be obtained. To solve a jigsaw puzzle is not, for example, merely "to make a picture" (Chapter VII, Crisis and the Emergence of Scientific Discoveries).
 
-**Q: What is a paradigm?**
+**Q: What is a Paradigm?**
 
 An achievement that serves:
 
@@ -39,11 +39,11 @@ These achievements possess two critical characteristics:
 > > 1. ...sufficiently unprecedented to attract an enduring group of adherents away from competing modes of scientific activity.
 > > 2. ... sufficiently open-ended to leave all sorts of problems for the redefined group of practitioners to resolve. (Chapter II, The Route to Normal Science).
 
-**Q: What is an anomaly?**
+**Q: What is an Anomaly?**
 
 > ...the recognition that nature has somehow violated the paradigm-induced expectations that govern normal science (Chapter VI, Anomoly and the Emergence of Scientific Discoveries).
 
-**Q: What is a crisis?**
+**Q: What is a Srisis?**
 
 > [A situation where] the awareness of anomaly had lasted so long and penetrated so deep that one can appropriately describe the fields affected by it as in a state of growing crisis (Chapter VII, Crisis and the Emergence of Scientific Discoveries).
 
@@ -51,7 +51,7 @@ These achievements possess two critical characteristics:
 
 > ... the proponents of competing paradigms practice their trades in different worlds. One contains constrained bodies that fall slowly, the other pendulums that repeat their motions again and again. In one, solutions are compounds, in the other mixtures. One is embedded in a flat, the other in a curved, matrix of space. Practicing in different worlds, the two groups of scientists see different things when they look from the same point in the same direction.
 
-**Q: What is an example of a scientific revolution?**
+**Q: What is an example of a Scientific Revolution?**
 
 The [Copernican Revolution](https://en.wikipedia.org/wiki/Copernican_Revolution) is one of several examples that he describes in depth:
 
@@ -71,6 +71,6 @@ The [Copernican Revolution](https://en.wikipedia.org/wiki/Copernican_Revolution)
 
 > Unfortunately [Kuhn's work] was also abused by the wave of skeptical intellectuals who called the very idea of truth in question. Kuhn had no such intention. He was a fact lover and a truth seeker (Preface by Ian Hacking).
 
-**Q: So, what do scientists do?**
+**Q: So, what do Scientists do?**
 
 > The scientific enterprise as a whole does from time to time prove useful, open up new territory, display order, and test long-accepted belief. Nevertheless, the individual engaged on a normal research problem is almost never doing any one of these things. Once engaged, his motivation is of a rather different sort. What then challenges him is the conviction that, if only he is skillful enough, he will succeed in solving a puzzle that no one before has solved or solved so well. Many of the greatest scientific minds have devoted all of their professional attention to demanding puzzles of this sort. On most occasions any particular field of specialization offers nothing else to do, a fact that makes it no less fascinating to the proper sort of addict (Chapter IV, Normal Science as Puzzle Solving).
