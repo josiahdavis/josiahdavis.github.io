@@ -36,8 +36,8 @@ An achievement that serves:
 
 These achievements possess two critical characteristics:
 
-> > 1. ...sufficiently unprecedented to attract an enduring group of adherents away from competing modes of scientific activity.
-> > 2. ... sufficiently open-ended to leave all sorts of problems for the redefined group of practitioners to resolve. (Chapter II, The Route to Normal Science).
+> 1. ...sufficiently unprecedented to attract an enduring group of adherents away from competing modes of scientific activity.
+> 2. ... sufficiently open-ended to leave all sorts of problems for the redefined group of practitioners to resolve. (Chapter II, The Route to Normal Science).
 
 **Q: What is an Anomaly?**
 
