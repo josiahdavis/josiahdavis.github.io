@@ -1,12 +1,12 @@
 ---
 layout: post
-title: William J. Stuntz
+title: William J. Stuntz on American Criminal Justice
 tags: summary, race, justice
 ---
 
 ## Summary
 
-Written by one of the most influential scholars of the last three decades years, The Collapse of the Criminal Justice System aims at nothing less than a comprehensive description of today's criminal justice system, how it came to be what it is today, and what can be done to fix it. A self-proclaimed conservative, and openly evangelical Christian, William J. Stuntz describes the current Criminal Justice System as an "arbitrary, discriminatory, and punitive beast" that has lost its way through politicizing criminal punishment, emphasizing procedural rather than substantive law, and losing a sense of local democracy. Stuntz completed the manuscript for this book on his deathbed and it was published after his death in 2011.
+Written by one of the most influential scholars of the last three decades years, [The Collapse of American Criminal Justice](https://www.amazon.com/Collapse-American-Criminal-Justice/dp/0674051750/ref=sr_1_1?ie=UTF8&qid=1528109683&sr=8-1&keywords=collapse+criminal+justice+system) aims at nothing less than a comprehensive description of today's criminal justice system, how it came to be what it is today, and what can be done to fix it. A self-proclaimed conservative, and openly evangelical Christian, William J. Stuntz describes the current Criminal Justice System as an "arbitrary, discriminatory, and punitive beast" that has lost its way through politicizing criminal punishment, emphasizing procedural rather than substantive law, and losing a sense of local democracy. Stuntz completed the manuscript for this book on his deathbed and it was published after his death in 2011.
 
 > Among the great untold stories of our time is this one: the last half of the twentieth century saw America's criminal justice system unravel. There are three keys to the system's dysfunction, each of which has deep historical roots but all of which took hold in the last sixty years.
 
