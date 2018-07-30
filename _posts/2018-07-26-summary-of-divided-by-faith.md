@@ -4,7 +4,7 @@ title: Divided by Faith by Michael O. Emerson and Christian Smith
 tags: christianity, racism
 ---
 
-![Alt text](../public/divided-by-faith.jpeg)
+![Alt text](/public/divided-by-faith.jpeg)
 
 Oxford University Press, 2001  
 224 Pages  
@@ -18,7 +18,7 @@ Christian Smith is the William R. Kenan, Jr. Professor of Sociology at the Unive
 
 ## Overview
 
-Americans live in a  racialized society, a society where differential rewards across race are observed in nearly every facet of life. Many white evangelicals do not have a category for structural injustice, and thus tend to take a benign view of racialization, understanding it exclusively at an individualistic level. There is a well-intended notion among evangelicals that if anything can overcome racism, it is the church. However, evangelicals have a poor record of opposing racism, with deep inconsistencies documented throughout history. Today, the evangelical church is more divided than the rest of America is. In fact, structural elements of religion in America actually reinforce, rather than reduce racial division.
+"This book is the story of how well-intentioned people, their values, and their institutions actually recreate racial divisions and inequalities they ostensibly oppose." From housing, to income, to employment, to nearly every facet of American society, differential outcomes across race are well-documented. Many white evangelicals do not have a category for structural injustice, and thus tend to take a benign view of racism, understanding it exclusively at an individualistic level. There is a well-intended notion among evangelicals that if anything can overcome racism, it is the church. However, evangelicals have a poor record of opposing racism, with deep inconsistencies documented throughout history. Today, the evangelical church is more divided than the rest of America is. In fact, structural elements of religion in America actually reinforce, rather than reduce racial division.
 
 ## Table of Contents
 
@@ -71,7 +71,7 @@ However, something was lost in translation. White Evangelical leaders tended to 
 
 ### Chapter 4: Color Blind Evangelicals Speak on the "Race Problem"
 
-Getting into the core research for this book, the authors conducted over 250 face-to-face interviews with evangelicals to get their perspective on the "Race Problem." Here is a typical response from Debbie, an white evangelical woman:
+The authors conducted over 250 face-to-face interviews with evangelicals to get their perspective on the "Race Problem." Here is a typical response from Debbie, an white evangelical woman:
 
 > Well to me, people have problems. I mean, two white guys working together are gonna have arguments once in a while. Women are gonna have arguments. It happens between men and women, between two white guys and two white women. It’s just people. People are gonna have arguments with people. I feel like once in a while, when an argument happens, say between a black guy and a white guy, instead of saying, "Hey, there’s two guys having an argument," we say it’s a race issue (pp. 69-70).
 
@@ -83,7 +83,7 @@ According to Debbie, the race problem is just a individual people problem that g
 
 - **Anti-Structuralism:** The belief that "invoking social structures shifts guilt away from its root source—the accountable individual" and the absence of the idea "that poor relationships might be shaped by social structures, such as laws, the ways institutions operate, or forms of segregation (pp. 78-79)."
 
-As a part of the survey, approximately 80% of the respondents said that Racism was a very important issue to address. However, when asked to provide a concrete example of racism "a substantial number could not... Conversely, our nonwhite respondents had no trouble producing specific examples of racism, nor did the relatively racially non-isolated whites, usually both at the individual and institutional levels. As many race scholars note, not having to know the details or extent of racialization is an advantage afforded to most white Americans (p 88)." It is noteworthy that this benign view of racialization is consistent with sociological research done much earlier.
+As a part of the survey, the majority of the respondents said that Racism was a very important issue to address. However, when asked to provide a concrete example of racism "a substantial number could not... Conversely, our nonwhite respondents had no trouble producing specific examples of racism, nor did the relatively racially non-isolated whites, usually both at the individual and institutional levels. As many race scholars note, not having to know the details or extent of racialization is an advantage afforded to most white Americans (p 88)." It is noteworthy that this benign view of racialization is consistent with sociological research done much earlier.
 
 > From interviews conducted back in the late 1960s, [David T.] Wellman concluded that many white respondents believed "agitators cause racial problems; white America does not," and "America proclaims that all people are equal and there is no reason to believe otherwise. (p. 88)"
 
