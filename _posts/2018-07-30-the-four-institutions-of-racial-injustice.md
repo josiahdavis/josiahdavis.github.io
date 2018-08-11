@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bryan Stevenson on Systematic Injustice
+title: The Four Institutions of Racial Injustice
 tags: racism, justice
 ---
 
