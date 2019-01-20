@@ -10,6 +10,7 @@ baseurl:             ""
 
 pages_list:
   Home: '/'
+  #Archive: '/archive/'
 
 # Assets
 #
