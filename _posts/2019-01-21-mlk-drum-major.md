@@ -148,28 +148,26 @@ He concludes with a reflection on what he would not like people to say at his fu
 
 He would not like to be known for his accomplishments:
 
-> If any of you are around when I have to meet my day, I don’t want a long funeral. And if you get somebody to deliver the eulogy, tell them not to talk too long. (Yes) And every now and then I wonder what I want them to say. Tell them not to mention that I have a Nobel Peace Prize—that isn’t important. Tell them not to mention that I have three or four hundred other awards—that’s not important. Tell them not to mention where I went to school. (Yes)
+> If any of you are around when I have to meet my day, I don’t want a long funeral. And if you get somebody to deliver the eulogy, tell them not to talk too long. *(Yes)* And every now and then I wonder what I want them to say. Tell them not to mention that I have a Nobel Peace Prize—that isn’t important. Tell them not to mention that I have three or four hundred other awards—that’s not important. Tell them not to mention where I went to school. *(Yes)*
 
 #### B. What He Would Like
 
 He would rather like to be known for serving others:
 
-> I'd like somebody to mention that day that Martin Luther King, Jr., tried to give his life serving others. (Yes)
+> I'd like somebody to mention that day that Martin Luther King, Jr., tried to give his life serving others. *(Yes)*
 
 > I'd like for somebody to say that day that Martin Luther King, Jr., tried to love somebody.
 
-> I want you to say that day that I tried to be right on the war question. (Amen)
+> I want you to say that day that I tried to be right on the war question. *(Amen)*
 
-> I want you to be able to say that day that I did try to feed the hungry. (Yes)
+> I want you to be able to say that day that I did try to feed the hungry. *(Yes)*
 
-> And I want you to be able to say that day that I did try in my life to clothe those who were naked. (Yes)
+> And I want you to be able to say that day that I did try in my life to clothe those who were naked. *(Yes)*
 
-> I want you to say on that day that I did try in my life to visit those who were in prison. (Lord)
+> I want you to say on that day that I did try in my life to visit those who were in prison. *(Lord)*
 
-> I want you to say that I tried to love and serve humanity. (Yes)
+> I want you to say that I tried to love and serve humanity. *(Yes)*
 
 > Yes, if you want to say that I was a drum major, say that I was a drum major for justice.
 
 *King Jr., Martin Luther. A Testament of Hope: The Essential Writings of Martin Luther King, Jr. Harper & Row, 1986.*
-
----
