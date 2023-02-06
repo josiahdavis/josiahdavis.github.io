@@ -12,7 +12,6 @@ title: Home
       </a>
     </h2>
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%B %-d, %Y" }}</time>
-    {{ post.content }}
   </article>
   {% endfor %}
 </div>
