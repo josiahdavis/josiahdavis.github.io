@@ -79,7 +79,7 @@ Here are some example values of predicting the optimal model size:
 
 #### Appendix 1 - Code for Linear Interpolation
 
-Here is how you can reproduce the following image and the linear interpolation.
+Here is how you can reproduce the linear interpolation to predict optimal model size from the given data size (and plot it).
 
 As an example, let's say you have an existing 1B model trained on 10^11 tokens so we have a reference point for comparison.
 
