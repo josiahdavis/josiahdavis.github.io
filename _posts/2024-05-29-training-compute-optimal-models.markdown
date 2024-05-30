@@ -2,7 +2,6 @@
 layout: post
 title:  "Training Compute Optimal Models"
 date:   2024-05-29 10:06:33 -0500
-categories: deep learning
 ---
 
 >Some notes on Chinchilla (https://arxiv.org/pdf/2203.15556.pdf) and how we might apply it more broadly to our own deep learning projects:
