@@ -7,7 +7,7 @@ date:   2024-05-29 10:06:33 -0500
 >Some notes on Chinchilla (https://arxiv.org/pdf/2203.15556.pdf) and how we might apply it more broadly to our own deep learning projects:
 
 1. **Overview:** What does “Training compute-optimal models” mean?
-2. **Application #1:** Given a compute budget $$C$$ (measured in FLOP), how large of a model $$C$$ (measured in parameters) and how much data $$D$$ (measured in tokens) should we be aiming for?
+2. **Application #1:** Given a compute budget $$C$$ (measured in FLOP), how large of a model $$N$$ (measured in parameters) and how much data $$D$$ (measured in tokens) should we be aiming for?
 3. **Application #2:** Given a limited dataset size $$D$$,  how large of a model $$N$$ should we train?
 
 #### Overview: What does “Training compute-optimal models” mean?
