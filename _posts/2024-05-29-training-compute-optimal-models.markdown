@@ -81,7 +81,7 @@ Here are some example values of predicting the optimal model size:
 
 Here is how you can reproduce the linear interpolation to predict optimal model size from the given data size (and plot it).
 
-As an example, let's say you have an existing 1B model trained on 10^11 tokens so we have a reference point for comparison.
+As an arbitrary example, let's say you have an existing 1B model trained on 10^11 tokens so we have a reference point to add to our plot.
 
 {% highlight python %}
 import matplotlib.pyplot as plt
