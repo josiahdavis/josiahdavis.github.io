@@ -7,7 +7,7 @@ date:   2024-05-29 10:06:33 -0500
 >Some notes on Chinchilla (https://arxiv.org/pdf/2203.15556.pdf) and how we might apply it more broadly to our own deep learning projects:
 
 1. **Overview:** What does “Training compute-optimal models” mean?
-2. **Application #1:** Given a compute budget $$C$$ (measured in FLOP), how large of a model $$C$$ (measured in parameters) and how much data D (measured in tokens) should we be aiming for?
+2. **Application #1:** Given a compute budget $$C$$ (measured in FLOP), how large of a model $$C$$ (measured in parameters) and how much data $$D$$ (measured in tokens) should we be aiming for?
 3. **Application #2:** Given a limited dataset size $$D$$,  how large of a model $$N$$ should we train?
 
 #### Overview: What does “Training compute-optimal models” mean?
@@ -45,19 +45,20 @@ See table below for more examples:
 |16xH100, 2 weeks	|14	|16	|1.98E+15	|0.4	|1.53E+22	|10,727	|238	|
 |400xH100, 4 weeks	|28	|400	|1.98E+15	|0.4	|7.66E+23	|72,926	|1,751	|
 
-See appendix for more context on compute budget inputs. Feel free to copy and modify with your own inputs.
+See appendix 2 for more context on compute budget inputs and appendix 3 for the formula to calculate the last two columns.
 
 #### Application #2: Given a limited dataset size $$D$$,  how large of a model $$N$$ should I train?
 
-If your dataset is relatively small, let’s somewhat arbitrarily choose $$D<4B$$ (corresponding to a single 8xV100 node from the table above), then you are not really in a compute-bound situation, where you need to worry about training compute budget per-se.
+If your dataset is relatively small, then you are not really in a compute-bound situation, where you need to worry about training compute budget per-se. 
 
-Rather, the question should be: given the amount of training data I actually have, how large of a model should I train?
+How small is small? We could somewhat arbitrarily choose a value e.g., $$D<4B$$ (corresponding to a single 8xV100 node from the table above), although this threshold will vary based off of what compute resources you happen to have.
+
+Regardless of the specific threshold, if you find yourself in a data-constrained regime, the question should be modified: given the amount of training data I actually have, how large of a model should I train?
 
 We can take the data from the paper (we will use Table A3 – Approach 2) and fit a linear model to predict the optimal model size, yielding: 
 
 $$log_{10}​(N)=0.9606135203483422∗log_{10}​(D)−0.8980869297587599 $$
 
-<!-- ![Image]() -->
 <center><img src="/assets/compute_optimal_2.jpg"></center>
 <center><b>Figure 2:</b> Predicting the Optimal Model size from the amount of training data. Data source is the Chinchilla paper https://arxiv.org/pdf/2203.15556.pdf.</center>
 <br>
@@ -149,7 +150,7 @@ plt.show()
 
 I get the following coefficient values from linear regression on data from Table A3 (same code as above, just swapping out the x,y). Doing a quick sanity check I find I am pretty close. 
 
-$$log_{10}​(N)=0.48994161286254695∗log_{10}​(C)-0.8390004003190913 $$
+$$log_{10}​(N)=0.48994161286254695 ∗ log_{10}​(C)-0.8390004003190913 $$
 
 $$log_{10}​(D) = 0.5100202250950424 * log_{10}​(C) + 0.061740265574555316 $$
 
