@@ -142,7 +142,7 @@ plt.show()
     * For FLOP achieved, I’m using a placeholder value based off what I’ve seen using PyTorch, BF16 on 8xA100. I assume that going from single-node to multi-node there will be a drop in utilization.
     * For FLOP promised by NVIDIA (i.e., Peak FLOP/s) I assume BF16 on Tensor Cores for A100, H100
 * Fact sheets:
-    * [NVIDIA H100 (P5)](https://resources.nvidia.com/en-us-tensor-core/nvidia-tensor-core-gpu-datasheet): 
+    * [NVIDIA H100 (P5)](https://resources.nvidia.com/en-us-tensor-core/nvidia-tensor-core-gpu-datasheet)
     * [NVIDIA A100 (P4)](https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf)
     * [NVIDIA V100 (P3)](https://images.nvidia.com/content/technologies/volta/pdf/volta-v100-datasheet-update-us-1165301-r5.pdf)
 
