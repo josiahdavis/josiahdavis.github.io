@@ -6,11 +6,14 @@ date:   2024-05-29 10:06:33 -0500
 
 >Some notes on Chinchilla (https://arxiv.org/pdf/2203.15556.pdf) and how we might apply it more broadly to our own deep learning projects:
 
-1. **Overview:** What does “Training compute-optimal models” mean?
-2. **Application #1:** Given a compute budget $$C$$ (measured in FLOP), how large of a model $$N$$ (measured in parameters) and how much data $$D$$ (measured in tokens) should we be aiming for?
-3. **Application #2:** Given a limited dataset size $$D$$,  how large of a model $$N$$ should we train?
+### Contents
 
-#### Overview: What does “Training compute-optimal models” mean?
+1. **Overview:** What does “Training compute-optimal models” mean?
+2. **Application #1:** Given a compute budget, how large of a model and how much data should we be aiming for?
+3. **Application #2:** Given a limited dataset size, how large of a model should we train?
+4. **Reproducibility:** Code to derive the linear models for predicting optimal values.
+
+### Overview: What does “Training compute-optimal models” mean?
 
 This paper (“Chinchilla”) demonstrates how to pick the *optimal* model size and training data required for a given compute budget. Optimality is defined as get the most “bang for buck”: maximizing model accuracy for the given compute budget. 
 
@@ -27,7 +30,7 @@ The big application from their paper is that a lot of the newest models at the t
 
 Now, let’s discuss now two ways in which we can apply this paper to our own deep learning projects.
 
-#### Application #1: Given a compute budget C (measured in FLOP), how large of a model N (measured in parameters) and how much data D (measured in tokens) should we be aiming for?
+### Application #1: Given a compute budget, how large of a model and how much data should we be aiming for?
 
 As an example, let’s say that you have a compute budget of a single p4 instance (8xA100), and you can train for up to one day with it. 
 
@@ -45,9 +48,34 @@ See table below for more examples:
 |16xH100, 2 weeks	|14	|16	|1.98E+15	|0.4	|1.53E+22	|10,727	|238	|
 |400xH100, 4 weeks	|28	|400	|1.98E+15	|0.4	|7.66E+23	|72,926	|1,751	|
 
-See appendix 2 for more context on compute budget inputs and appendix 3 for the formula to calculate the last two columns.
+Here are some details about this table:
 
-#### Application #2: Given a limited dataset size $$D$$,  how large of a model $$N$$ should I train?
+* **Peak FLOP/s**: From NVIDIA's fact sheets: [H100](https://resources.nvidia.com/en-us-tensor-core/nvidia-tensor-core-gpu-datasheet), [A100](https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf), [V100](https://images.nvidia.com/content/technologies/volta/pdf/volta-v100-datasheet-update-us-1165301-r5.pdf). I use values for BF16 on Tensor Cores for A100, H100.
+* **Utilization rate**:  FLOP achieved  / FLOP promised by NVIDIA. For FLOP achieved, I’m using a placeholder value based off what I’ve seen using PyTorch, BF16 on 8xA100.
+* **Compute Budget**: Training time x GPUs x Peak FLOP/s x Utilization rate
+* **Parameters (M)** I fit a linear model on data from Table A3 of the Chinchilla paper (Approach 2) yeilding:
+
+$$log_{10}​(N)=0.48994161286254695 ∗ log_{10}​(C)-0.8390004003190913 $$
+
+* **Data (B)**  I fit a linear model on data from Table A3 of the Chinchilla paper (Approach 2) yeilding: 
+
+$$log_{10}​(D) = 0.5100202250950424 * log_{10}​(C) + 0.061740265574555316 $$
+
+As a convenience, here is a function you can use to predict the optimal data/model size from the compute budget:
+
+{% highlight python %}
+
+import numpy as np
+
+def predict_model_from_compute(compute):
+    return 10 ** (0.48994161286254695 * np.log10(compute) - 0.8390004003190913)
+
+def predict_data_from_compute(compute):
+    return 10 ** (0.5100202250950424 * np.log10(compute) + 0.061740265574555316)
+
+{% endhighlight %}
+
+### Application #2: Given a limited dataset size, how large of a model should we train?
 
 If your dataset is relatively small, then you are not really in a compute-bound situation, where you need to worry about training compute budget per-se. 
 
@@ -55,7 +83,7 @@ How small is small? We could somewhat arbitrarily choose a value e.g., $$D<4B$$ 
 
 Regardless of the specific threshold, if you find yourself in a data-constrained regime, the question should be modified: given the amount of training data I actually have, how large of a model should I train?
 
-We can take the data from the paper (we will use Table A3 – Approach 2) and fit a linear model to predict the optimal model size, yielding: 
+Again, we can take data Table A3 (using Approach 2) and fit a linear model, but this time mapping between data and model size, yielding: 
 
 $$log_{10}​(N)=0.9606135203483422∗log_{10}​(D)−0.8980869297587599 $$
 
@@ -75,11 +103,22 @@ Here are some example values of predicting the optimal model size:
 |1E14	|3.55E12	|
 
 
-* * *
+As a convenience, here is a python function to compute the optimal model size given the data size:
 
-#### Appendix 1 - Code for Linear Interpolation
+{% highlight python %}
 
-Here is how you can reproduce the linear interpolation to predict optimal model size from the given data size (and plot it).
+import numpy as np
+
+def predict_model_from_data(data):
+    return 10 ** (0.9606135203483419 * np.log10(data) - 0.8980869297587544)
+
+{% endhighlight %}
+
+### Reproducibility: Code to derive the linear models for predicting optimal values.
+
+Here is how you can reproduce the linear interpolations to predict optimal model size from the given data size (and plot it).
+
+I will demonstrate this for the case of predicting the model size from the data, but the data is also below to do the same thing for the model and data size from the compute.
 
 As an arbitrary example, let's say you have an existing 1B model trained on 10^11 tokens so we have a reference point to add to our plot.
 
@@ -89,18 +128,20 @@ import numpy as np
 import pandas as pd
 
 # 1. Import data from Table A3 (approach 2)
-
-d = pd.DataFrame([
-    [400e6, 7.7e9, 1.84e19],
-    [1e9, 20.0e9, 1.20e20],
-    [10e9, 219.5e9, 1.32e22],
-    [67e9, 1.7e12, 6.88e23],
-    [175e9, 4.3e12, 4.54e24],
-    [280e9, 7.1e12, 1.18e25],
-    [520e9, 13.4e12, 4.19e25],
-    [1e12, 26.5e12, 1.59e26],
-    [10e12, 292.0e12, 1.75e28],
-], columns = ["Params", "Tokens", "Compute"])
+d = pd.DataFrame(
+    [
+        [400e6, 7.7e9, 1.84e19],
+        [1e9, 20.0e9, 1.20e20],
+        [10e9, 219.5e9, 1.32e22],
+        [67e9, 1.7e12, 6.88e23],
+        [175e9, 4.3e12, 4.54e24],
+        [280e9, 7.1e12, 1.18e25],
+        [520e9, 13.4e12, 4.19e25],
+        [1e12, 26.5e12, 1.59e26],
+        [10e12, 292.0e12, 1.75e28],
+    ],
+    columns=["Params", "Tokens", "Compute"],
+)
 
 # 2. Fit line
 # https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html
@@ -116,8 +157,6 @@ def predict(d):
     return 10**(m * np.log10(d) + c)
 
 # 3. Create a nice plot
-# As an example, let's say you have an existing 1B model trained on 10^11 tokens.
-
 x_for_line = np.linspace(start=d["Tokens"].min(), stop=d["Tokens"].max())
 plt.figure(figsize=(5, 5))
 plt.scatter(d["Tokens"], d["Params"], label="Chinchilla data (Approach 2)", zorder=3, color="k")
@@ -135,28 +174,13 @@ plt.show()
 
 {% endhighlight %}
 
-#### Appendix 2 – Calculating Compute Budget
+***
 
-* Mapping AWS → NVIDIA: p3 → V100s, p4 → A100s, and p5 → H100.
-* By utilization I’m referring to FLOP achieved  / FLOP promised by NVIDIA.
-    * For FLOP achieved, I’m using a placeholder value based off what I’ve seen using PyTorch, BF16 on 8xA100. I assume that going from single-node to multi-node there will be a drop in utilization.
-    * For FLOP promised by NVIDIA (i.e., Peak FLOP/s) I assume BF16 on Tensor Cores for A100, H100
-* Fact sheets:
-    * [NVIDIA H100 (P5)](https://resources.nvidia.com/en-us-tensor-core/nvidia-tensor-core-gpu-datasheet)
-    * [NVIDIA A100 (P4)](https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf)
-    * [NVIDIA V100 (P3)](https://images.nvidia.com/content/technologies/volta/pdf/volta-v100-datasheet-update-us-1165301-r5.pdf)
+### Appendix – Table A3 Sanity Check
 
-#### Appendix 3 – Table A3 Sanity Check
+Here is a quick sanity check I did to make sure that my linear models were correct. As you can see from the last two columns, it's not exaclty the same, but it's pretty close.
 
-I get the following coefficient values from linear regression on data from Table A3 (same code as above, just swapping out the x,y). Doing a quick sanity check I find I am pretty close. 
-
-$$log_{10}​(N)=0.48994161286254695 ∗ log_{10}​(C)-0.8390004003190913 $$
-
-$$log_{10}​(D) = 0.5100202250950424 * log_{10}​(C) + 0.061740265574555316 $$
-
-I use these to produce the final two columns from the first table.
-
-|	|Predictions	| |Reported | 	|Ratio	|
+|	|My Predictions	| | What was Reported | 	|Ratio	|
 |---	|---	|---	|---	|
 |Compute	|Parameters (B)	|Data (B)	|Parameters (B)	|Data (B)	|Parameters (B)	|Data (B)	|
 |1.84E+19	|0.40	|7.71	|0.40	|7.70	|0.99	|1.00	|
