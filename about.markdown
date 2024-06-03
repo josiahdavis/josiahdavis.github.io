@@ -6,10 +6,12 @@ permalink: /about/
 
 Hi there, my name is Josiah. 
 
-For the past 12 years I've been working on a variety of applied problems in Artificial Intelligence (AI) and Machine Learning. 
+For the past decade+ I've been working on the development and application of AI/ML to real-world problems.
 
-Currently, I work at Amazon where I focus on applying Deep Learning to a variety of use cases including assortment optimization and last mile routing.
+Currently, I'm a Senior Applied Scientist at Amazon Last Mile.
 
-I recieved my Bachelor's degree in Mechanical Engineering from University of Maryland, and my Master's degree in Statistics from University of Californnia, Berkeley.
+Previsouly, I worked at Amazon's Supply Chain Optimization Technology (SCOT) organization. Before that, I was a founding member of the Amazon Machine Learning Solutions Lab with AWS.
 
-This blog is an experiment, I only plan to publish 6 times initially to see if the benefit and usefulness is high enough to justify the time I put in it.
+I have a mixed STEM background, earning my Bachelor's degree in Mechanical Engineering from University of Maryland, and my Master's degree in Statistics from University of Californnia, Berkeley.
+
+This blog is an experiment, I plan to publish 6 times initially to see if the benefit and usefulness is high enough to justify the time I put in it.
